@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-gray-200 py-3">
+	<div class="py-3">
 	<div class="container mx-auto">
 		<div class="flex justify-start flex-wrap">
 			<router-link
