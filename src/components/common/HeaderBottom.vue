@@ -23,7 +23,9 @@
 				
 				//return num
 			}
+
 		},
+
 		data() {
 			return {
 				menus: ['Office Supplies', 'Cleaning', 'Solar', 'It & Electronic', 'Security', 'Office Supplies', 'Cleaning', 'Solar', 'It & Electronic', 'Security']
