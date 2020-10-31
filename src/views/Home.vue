@@ -1,26 +1,34 @@
 <template>
-	<div class="bg-white">
-		<div class="container bg-white mx-auto pt-10 pb-10">
-			Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Corporis dolorem aliquid, vel officia deleniti voluptates ut dignissimos totam dolor inventore. Quaerat iusto quidem vero rerum praesentium atque exercitationem repudiandae eligendi!
+	<div class="flex w-full container mx-auto mb-10 shadow-md">
+		<div class="w-1/5 ">
+			<SideNav/>
+		</div>
+		<div class="w-4/5 bg-white px-6 py-4">
+			<TopBar/>
+
+			<div class="grid git-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4">
+				<div v-for="(n, i) in 8" :key="i">
+					<ProductCard />
+				</div>
+			</div>
+			<div class="grid grid-cols-1">
+				<img class="w-full mt-5" src="/images/add.jpg" alt="">
+			</div>
 		</div>
 	</div>
-	<div class="container text-blue-600 mx-auto pt-10 pb-10">
-			Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Corporis dolorem aliquid, vel officia deleniti voluptates ut dignissimos totam dolor inventore. Quaerat iusto quidem vero rerum praesentium atque exercitationem repudiandae eligendi!
-			Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Expedita molestiae molestias, ea minima voluptas eligendi, nemo facilis voluptate nobis vero alias, quod sit atque similique, reiciendis. Soluta quis nesciunt, ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a atque, consectetur minus aliquam velit illo quo, ipsam iusto ratione hic soluta quasi? Quaerat facere molestias libero aliquam dicta qui.
-		</div>	<div class="container text-blue-600 mx-auto pt-10 pb-10">
-			Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Corporis dolorem aliquid, vel officia deleniti voluptates ut dignissimos totam dolor inventore. Quaerat iusto quidem vero rerum praesentium atque exercitationem repudiandae eligendi!
-			Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Expedita molestiae molestias, ea minima voluptas eligendi, nemo facilis voluptate nobis vero alias, quod sit atque similique, reiciendis. Soluta quis nesciunt, ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a atque, consectetur minus aliquam velit illo quo, ipsam iusto ratione hic soluta quasi? Quaerat facere molestias libero aliquam dicta qui.
-		</div>
-</template>
+	</template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+	import SideNav from '@/components/common/SideNav.vue'
+	import TopBar from '@/components/common/TopBar.vue'
+	import ProductCard from '@/components/common/ProductCard.vue'
 
 export default {
   name: 'Home',
   components: {
-    
+    SideNav,
+    TopBar,
+    ProductCard
   }
 }
 </script>
