@@ -1,5 +1,5 @@
 <template>
-	<div class="flex bg-blue-500 items-center px-5 py-2">
+	<div class="flex bg-blue-500 items-center px-5 py-2 mb-3">
 		<span class="mdi mdi-chair-rolling text-3xl mr-2 text-gray-100"></span>
 		<span class="uppercase text-sm font-semibold text-gray-100">Some Menu</span>
 	</div>
@@ -9,10 +9,10 @@
 			v-for="(item, index) in items"
 			:key="index"
 			@click="id = item.name"
-			:class="`flex px-5 py-3 items-center w-full focus:outline-none hover:text-blue-500 text-gray-700 ${id == item.name ? 'text-blue-500 border-l-4 border-blue-500 bg-white' : ''}`"
+			:class="`flex px-5 py-1 items-center w-full focus:outline-none hover:text-blue-500 text-gray-700 ${id == item.name ? 'text-blue-500 border-l-4 border-blue-500 bg-white rounded' : ''}`"
 		>
 			<span :class="`${item.icon} text-xl mr-2`"></span>
-			<span class="text-lg font-semibold">{{ item.name }}</span>
+			<span class="text-sm font-semibold">{{ item.name }}</span>
 		</button>
 	</div>
 </template>

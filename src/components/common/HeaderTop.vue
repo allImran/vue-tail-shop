@@ -1,6 +1,6 @@
 <template>
 	<marquee
-		class=" pb-2 pt-2 h-500"
+		class="py-1 text-sm"
 	>
 		**Sign up: Register to get the best offer
 	</marquee>

@@ -2,9 +2,9 @@
 	<div class="bg-white">
 		<div class="container mx-auto py-3">
 			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
-				<div class="flex justify-between px-2">
+				<div class="flex justify-between items-center px-2">
 					<div class="md:flex-shrink-0">
-						<img class="md:w-40" src="/images/logo.jpg" alt="">
+						<img src="/images/logo.jpg" alt="">
 					</div>
 					<button 
 						class="bg-gray-800 rounded sm:text-xs text-white font-bold hover:bg-blue-600 focus:outline-none px-1 h-10">
