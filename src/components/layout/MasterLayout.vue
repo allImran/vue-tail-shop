@@ -5,6 +5,7 @@
   <slot />
     <FooterTop/>
   <FooterMiddle/>
+  <FooterBottom/>
 </template>
 
 <script>
@@ -13,13 +14,15 @@ import Header from "@/components/common/Header";
 import HeaderBottom from "@/components/common/HeaderBottom";
 import FooterTop from '@/components/common/FooterTop'
 import FooterMiddle from '@/components/common/FooterMiddle'
+import FooterBottom from '@/components/molecule/footer/FooterBottom'
 export default {
   components: {
     HeaderTop,
     Header,
     HeaderBottom,
     FooterTop,
-    FooterMiddle
+    FooterMiddle,
+    FooterBottom
   },
 };
 </script>

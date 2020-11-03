@@ -11,9 +11,9 @@
     name: 'App',
     computed: {
     layout() {
-      return (this.$route.meta.layout || default_layout) + "-layout";
+        return (this.$route.meta.layout || default_layout) + "-layout";
+      },
     },
-  },
   }
 </script>
 
