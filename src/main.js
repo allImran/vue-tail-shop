@@ -11,6 +11,8 @@ const app = createApp(App);
 
 app.use(store);
 app.use(router);
+
 app.component('master-layout', MasterLayout);
 app.component('auth-layout', AuthLayout);
+
 app.mount('#app');
