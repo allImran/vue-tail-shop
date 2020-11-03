@@ -1,5 +1,9 @@
 <template>
-  <div class="flex w-full container mx-auto mb-10 shadow-md">
+  <div
+    class="flex w-full container mx-auto mb-10 shadow-md"
+    v-for="i in 3"
+    :key="i"
+  >
     <div class="w-1/5 ">
       <SideNav />
     </div>
@@ -22,13 +26,16 @@
 import SideNav from "@/components/common/SideNav.vue";
 import TopBar from "@/components/common/TopBar.vue";
 import ProductCard from "@/components/common/ProductCard.vue";
-
+import { response } from "@/data/products";
 export default {
   name: "Home",
   components: {
     SideNav,
     TopBar,
     ProductCard,
+  },
+  mounted() {
+    console.log(response, "API RESPONSE");
   },
 };
 </script>
