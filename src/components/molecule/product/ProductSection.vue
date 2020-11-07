@@ -10,7 +10,7 @@
     <div class="w-4/5 bg-white px-6 py-4">
       <TopBar />
 
-      <div class="grid git-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4">
+      <div class="grid git-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-6 mt-6">
         <div v-for="(n, i) in 8" :key="i">
           <ProductCard />
         </div>
@@ -25,7 +25,7 @@
 <script>
 import SideNav from "@/components/common/SideNav.vue";
 import TopBar from "@/components/common/TopBar.vue";
-import ProductCard from "@/components/common/ProductCard.vue";
+import ProductCard from "@/components/molecule/product/ProductCard.vue";
 export default {
   name: "ProductSection",
   components: {
