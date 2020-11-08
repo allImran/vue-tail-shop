@@ -28,11 +28,11 @@
 						class="mb-5
 						"
 					/>
-					<TextWithIcon
+					<ClickbleItem
 						icon="mdi mdi-moon-full"
 						iconStyle="text-gray-600 text-xs"
 						text="Anything"
-						textStyle="text-gray-700 text-sm ml-2"
+						textStyle="text-gray-700 text-sm ml-2 hover:text-blue-400"
 					/>
 
 				</div>
@@ -46,12 +46,14 @@
 </template>
 <script>
 	import TextWithIcon from '@/components/atom/TextWithIcon'
+	import ClickbleItem from '@/components/atom/ClickbleItem'
 	import BorderedTitle from '@/components/atom/BorderedTitle'
 	export default{
 		name: 'FooterBootom',
 		components: {
 			TextWithIcon,
-			BorderedTitle
+			BorderedTitle,
+			ClickbleItem
 		}
 	}
 </script>
