@@ -1,24 +1,27 @@
 <template>
 	<div class="bg-white">
 		<div class="container mx-auto py-3">
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
-				<div class="flex justify-between items-center px-2">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+				<div class="flex justify-between">
 					<div class="md:flex-shrink-0">
-						<img src="/images/logo.jpg" alt="">
+						<img src="/images/logo.png" alt="">
 					</div>
 					<button 
-						class="bg-gray-800 rounded sm:text-xs text-white font-bold hover:bg-blue-600 focus:outline-none px-1 h-10">
-						<span class="mdi mdi-menu"></span> All categories
+						class="bg-gray-800 rounded text-lg text-white uppercase hover:bg-blue-600 focus:outline-none px-4 py-2">
+						<span class="mdi mdi-menu pr-3"></span> <span class="text-sm font-semibold">All categories</span>
 					</button>
 				</div>
-				<div class="px-2 md:col-span-2 lg:col-auto">
-					<input placeholder="Search by text" 
-					class="hover:bg-white border-solid border border-blue-400 rounded focus:border-blue-400 focus:outline-none w-full h-10 px-3" type="text">
+				<div class="flex md:col-span-2 lg:col-auto">
+					<div class=" flex w-full border-solid border border-blue-400 rounded p-1">
+						<input placeholder="Search by text" 
+						class="hover:bg-white focus:border-blue-400 focus:outline-none w-full px-3" type="text">
+						<span class="mdi text-3xl mdi-magnify bg-blue-400 rounded " style="color: #fff; padding: 4px"></span>
+					</div>
 				</div>
-				<div class="px-2 sm:col-span-3 lg:col-auto">
+				<div class="sm:col-span-3 lg:col-auto">
 					<div class="flex justify-between">
 						<router-link class="flex items-center text-gray-700" to="#">
-							<span class="mdi text-3xl mdi-drag"></span>
+							<img width="30" src="/images/icons/circled_menu.svg" alt="">
 						</router-link> 
 						<router-link class="flex items-center text-gray-700" to="#">
 							<span class="mdi text-3xl mdi-cart"></span>
