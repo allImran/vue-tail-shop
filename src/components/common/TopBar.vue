@@ -11,10 +11,10 @@
 			</button>
 		</div>
 		<div class="flex">
-			<button class="focus:outline-none">
+			<button @click="$emit('prev')" class="focus:outline-none">
 				<span class="mdi mdi-chevron-left rounded-l border text-lg"></span>
 			</button>
-			<button class="focus:outline-none">
+			<button @click="$emit('next')" class="focus:outline-none">
 				<span class="mdi mdi-chevron-right rounded-r border text-lg"></span>
 			</button>
 		</div>

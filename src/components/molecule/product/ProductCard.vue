@@ -10,7 +10,7 @@
 				#partext ltd
 			</div>
 		</div>
-		<p class="font-medium text-xs text-gray-800">Lorem ipsum dolo consectetur adipisici explicabo!</p>
+		<p class="font-medium text-xs text-gray-800"> {{ id }} Lorem ipsum dolo consectetur adipisici explicabo!</p>
 		<p class="text-gray-700 text-xs">
 			<span class="text-gray-600">Vendor: </span>
 			Baba Jamburi
@@ -21,6 +21,11 @@
 <script>
 	export default{
 		name: 'ProductCard',
+		props: {
+			id: {
+				type: Number
+			}
+		}
 	}
 </script>
 
@@ -85,6 +90,8 @@
 		position: absolute;
 		transition-delay: .2s;
 		transition: .3s bottom;
-		background-color: rgba(0,0,0, .5);	
+		/* background-color: rgba(0,0,0, .5);	 */
+
+		background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,1));
 	}
 </style>
