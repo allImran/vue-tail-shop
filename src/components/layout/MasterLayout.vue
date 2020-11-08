@@ -3,17 +3,17 @@
   <Header />
   <HeaderBottom />
   <slot />
-    <FooterTop/>
+  <FooterTop/>
   <FooterMiddle/>
   <FooterBottom/>
 </template>
 
 <script>
-import HeaderTop from "@/components/common/HeaderTop";
-import Header from "@/components/common/Header";
-import HeaderBottom from "@/components/common/HeaderBottom";
-import FooterTop from '@/components/common/FooterTop'
-import FooterMiddle from '@/components/common/FooterMiddle'
+import HeaderTop from "@/components/molecule/navigation/HeaderTop";
+import Header from "@/components/molecule/navigation/Header";
+import HeaderBottom from "@/components/molecule/navigation/HeaderBottom";
+import FooterTop from '@/components/molecule/footer/FooterTop'
+import FooterMiddle from '@/components/molecule/footer/FooterMiddle'
 import FooterBottom from '@/components/molecule/footer/FooterBottom'
 export default {
   components: {

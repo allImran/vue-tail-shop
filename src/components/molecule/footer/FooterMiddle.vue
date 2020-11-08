@@ -12,10 +12,12 @@
 			</div>
 			<div class="w-full sm:w-2/4 lg:w-5/12 flex items-center">
 				<div class="flex w-full p-2 items-center">
-					<input placeholder="Search by text" 
-					class="hover:bg-white border-solid border border-blue-400 rounded focus:border-blue-400 focus:outline-none w-full h-10 px-3" type="text">
-					<button class="bg-blue-700 rounded text-white font-bold hover:bg-blue-800 focus:outline-none px-3 h-10">
-					Subscribe
+					<input 
+						placeholder="Search by text" 
+						class="hover:bg-white border-solid border border-blue-400 rounded focus:border-blue-400 focus:outline-none w-full h-10 px-3" type="text">
+					<button 
+						class="bg-blue-700 rounded text-white font-bold hover:bg-blue-800 focus:outline-none px-3 h-10">
+						Subscribe
 					</button>
 				</div>
 			</div>
