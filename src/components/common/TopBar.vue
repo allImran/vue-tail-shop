@@ -1,6 +1,6 @@
 <template>
-	<div class="flex justify-between">
-		<div class="flex border-b w-full">
+	<div class="flex">
+		<div class="flex justify-end border-b w-full">
 			<button
 				:class="`focus:outline-none text-sm tex-grey-700 mr-5 pb-1 ${ id == item.name ? 'border-b-2 border-blue-500' : 'border-b-2 border-transparent'}`"
 				@click="id = item.name"
@@ -10,14 +10,15 @@
 				{{ item.name }}
 			</button>
 		</div>
-		<div class="flex">
+		<slot name="nav"></slot>
+		<!-- <div class="flex">
 			<button class="focus:outline-none">
 				<span class="mdi mdi-chevron-left rounded-l border text-lg"></span>
 			</button>
 			<button class="focus:outline-none">
 				<span class="mdi mdi-chevron-right rounded-r border text-lg"></span>
 			</button>
-		</div>
+		</div> -->
 	</div>
 </template>
 
