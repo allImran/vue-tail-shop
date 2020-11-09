@@ -8,10 +8,7 @@
 				text="Featured Brands"
 				textStyle="text-gray-700 text-md truncate"
 			/>
-			<TopBar
-				tabMargin="ml-5"
-				tabPosition="justify-end"
-			/>
+			<slot name="topbar"></slot>
 		</div>
 		<div class="flex flex-wrap px-5">
 			<div
@@ -25,13 +22,11 @@
 </template>
 
 <script>
-	import TopBar from "@/components/molecule/navigation/TopBar.vue";
 	import TextWithIcon from "@/components/atom/TextWithIcon"
 	export default{
 		name: 'BrandList',
 		components: {
-			TextWithIcon,
-			TopBar
+			TextWithIcon
 		}
 	}
 </script>

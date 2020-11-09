@@ -18,6 +18,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "login" */ '../views/Login.vue'),
     meta: { layout: 'auth' }
   },
+  {
+    path: '/category',
+    name: 'Category',
+    component: () => import(/* webpackChunkName: "login" */ '../views/Category.vue'),
+  },
 
 ]
 
