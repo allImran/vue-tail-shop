@@ -1,7 +1,7 @@
 <template>
 	<BrandSection>
 		<template v-slot:topbar>
-			<TopBar />
+			<TopBar tabPosition="justify-end" tabMargin="ml-5"/>
 		</template>
 	</BrandSection>
 	<ProductSection />
