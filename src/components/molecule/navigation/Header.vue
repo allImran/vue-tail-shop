@@ -1,32 +1,33 @@
 <template>
 	<div class="bg-white">
 		<div class="container mx-auto py-3">
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
-				<div class="flex justify-between items-center px-2">
-					<div class="md:flex-shrink-0">
-						<img src="/images/logo.jpg" alt="">
-					</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-cols-6 gap-3">
+				<div class="col-span-2">
+					<img class="inline-block" src="/images/logo.png" alt="">
 					<button 
-						class="bg-gray-800 rounded sm:text-xs text-white font-bold hover:bg-blue-600 focus:outline-none px-1 h-10">
-						<span class="mdi mdi-menu"></span> All categories
+						class="bg-gray-800 w-42 rounded text-lg text-white uppercase hover:bg-blue-600 focus:outline-none px-4 py-2">
+						<span class="mdi mdi-menu pr-3"></span> <span class="text-sm font-semibold">All categories</span>
 					</button>
 				</div>
-				<div class="px-2 md:col-span-2 lg:col-auto">
-					<input placeholder="Search by text" 
-					class="hover:bg-white border-solid border border-blue-400 rounded focus:border-blue-400 focus:outline-none w-full h-10 px-3" type="text">
+				<div class="col-span-3">
+					<div class="flex items-start w-full border-solid border border-blue-400 rounded relative" style="padding: 8px">
+						<input placeholder="Search product by title, brand, materials, supplies, category, etc..." 
+						class="hover:bg-white focus:border-blue-400 focus:outline-none w-full" type="text">
+						<span class="mdi text-xl mdi-magnify bg-blue-400 rounded absolute cursor-pointer" style="color: #fff; padding: 1px 4px; top: 3px; right: 3px"></span>
+					</div>
 				</div>
-				<div class="px-2 sm:col-span-3 lg:col-auto">
+				<div class="col-span-1">
 					<div class="flex justify-between">
 						<router-link class="flex items-center text-gray-700" to="#">
-							<span class="mdi text-3xl mdi-drag"></span>
+							<img width="30" src="/images/icons/circled_menu.svg" alt="">
 						</router-link> 
-						<router-link class="flex items-center text-gray-700" to="#">
+						<router-link class="flex w-10 items-center text-gray-700" to="#">
 							<span class="mdi text-3xl mdi-cart"></span>
-							<span>Place Req</span>
+							<span class="text-xs">Place Req</span>
 						</router-link> 
-						<router-link class="flex items-center text-gray-700" to="#">
+						<router-link class="flex w-10 items-center text-gray-700" to="#">
 							<span class="mdi text-3xl mdi-view-list"></span>
-							<span>Rep List</span>
+							<span class="text-xs">Rep List</span>
 						</router-link> 
 						<router-link class="flex items-center text-gray-700" to="#">
 							<span class="mdi text-3xl mdi-account-circle"></span>
