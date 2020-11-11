@@ -53,56 +53,56 @@ export const products = [
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Oiler Lux'
     },
     {
         id: 3,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Solartod'
     },
     {
         id: 4,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Jumburi'
     },
     {
         id: 5,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Babalar'
     },
     {
         id: 6,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Oracle'
     },
     {
         id: 7,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Lord Of'
     },
     {
         id: 8,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'SamidVot'
     },
     {
         id: 9,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'LOcalHost'
     },
     {
         id: 10,
@@ -116,42 +116,42 @@ export const products = [
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Nematoda'
     },
     {
         id: 12,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Portoptye'
     },
     {
         id: 13,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Martlnoa'
     },
     {
         id: 14,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Loftdjkfot'
     },
     {
         id: 15,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Lndlord'
     },
     {
         id: 16,
         name: 'Lorem ipsum dolo consectetur adipisici explicabo!',
         description: 'Lorem ipsum dolo consectetur adipisici explicabo! Lorem ipsum dolo consectetur adipisici explicabo!',
         brand: '# Partext Ltd',
-        vendor: 'Baba Jumburi'
+        vendor: 'Loacalhost'
     },
     {
         id: 17,
