@@ -176,3 +176,19 @@ export const products = [
     },
 
 ];
+
+
+export const links = [
+    {
+        link: 'https://facebook.com',
+        icon: '/images/facebook.png'
+    },
+    {
+        link: 'https://facebook.com',
+        icon: '/images/facebook.png'
+    },
+    {
+        link: 'https://facebook.com',
+        icon: '/images/facebook.png'
+    }
+]

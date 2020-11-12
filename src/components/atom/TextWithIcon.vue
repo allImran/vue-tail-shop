@@ -1,5 +1,5 @@
 <template>
-	<div class="flex flex-row items-center pb-2">
+	<div class="flex flex-row items-center">
 		<span :class="`${icon} ${iconStyle}`"></span>
 		<p :class="`px-1 ${textStyle}`">
 			{{ text }}
