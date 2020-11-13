@@ -10,23 +10,23 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue')
   },
   {
     path: '/login',
     name: 'Login',
-    component: () => import(/* webpackChunkName: "login" */ '../views/Login.vue'),
+    component: () => import('../views/Login.vue'),
     meta: { layout: 'auth' }
   },
   {
     path: '/category',
     name: 'Category',
-    component: () => import(/* webpackChunkName: "login" */ '../views/Category.vue'),
+    component: () => import('../views/Category.vue'),
   },
   {
-    path: '/profile',
-    name: 'Profile',
-    component: () => import(/* webpackChunkName: "login" */ '../views/Profile.vue'),
+    path: '/vendor',
+    name: 'vendor',
+    component: () => import('../views/Vendor.vue'),
   },
 
 ]

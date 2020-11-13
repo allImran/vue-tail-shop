@@ -1,7 +1,7 @@
 <template>
 	<div class="flex flex-col">
-		<div class="p-1 border border-solid border-gray-300">
-			<img class="card-image" src="/images/product2.jpg" alt="">
+		<div :class="`p-1 ${border}`">
+			<img class="card-image" :src="image" alt="">
 		</div>
 		<router-link to="#">
 			<p class="text-gray-600 text-center w-full hover:text-blue-500">{{ title }}</p>
@@ -16,7 +16,15 @@
 			
 		},
 		props: {
-			title: String
+			title: {
+				default: 'Default'
+			},
+			border: {
+				default: 'border border-solid border-gray-300'
+			},
+			image: {
+				default: '/images/product2.jpg'
+			}
 		}
 	}
 </script>

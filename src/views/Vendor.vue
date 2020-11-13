@@ -4,8 +4,8 @@
 </template>
 
 <script>
-	import CoverDescriptionSection from '@/components/molecule/profile/CoverDescription'
-	import ProductServiceSection from '@/components/molecule/profile/ProductService'
+	import CoverDescriptionSection from '@/components/molecule/vendor/CoverDescription'
+	import ProductServiceSection from '@/components/molecule/vendor/ProductService'
 	export default{
 		name: 'Profile',
 		components: {
