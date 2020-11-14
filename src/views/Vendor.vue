@@ -1,16 +1,19 @@
 <template>
 	<CoverDescriptionSection />
 	<ProductServiceSection />
+	<AboutUsSection />
 </template>
 
 <script>
 	import CoverDescriptionSection from '@/components/molecule/vendor/CoverDescription'
 	import ProductServiceSection from '@/components/molecule/vendor/ProductService'
+	import AboutUsSection from '@/components/molecule/vendor/AboutUs'
 	export default{
-		name: 'Profile',
+		name: 'Vendor',
 		components: {
 			CoverDescriptionSection,
-			ProductServiceSection
+			ProductServiceSection,
+			AboutUsSection
 		}
 	}
 </script>
