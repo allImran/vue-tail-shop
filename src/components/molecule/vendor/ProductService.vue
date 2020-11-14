@@ -1,6 +1,6 @@
 
 <template>
-	<div class="container bg-white mx-auto shadow-md py-2 px-5 mb-5">
+	<div class="container bg-white mx-auto shadow-md py-2 px-5 pb-10 mb-5">
 		<div class="flex mb-10">
 			<TextWithIcon
 				class="mt-3"
@@ -36,6 +36,12 @@
 		</ProjectCardView>
 
 		<OurClient />
+
+		<ClientTestimonial>
+			<template v-slot:top>
+				<p class="uppercase font-bold text-gray-700 mb-16 mt-16">client testimonial</p>
+			</template>
+		</ClientTestimonial>
 	</div>
 </template>
 
@@ -45,6 +51,7 @@
 	import ProductCard from "@/components/molecule/product/ProductCard.vue";
 	import ProjectCardView from "@/components/molecule/project/ProjectCardView.vue";
 	import OurClient from "@/components/molecule/vendor/OurClient.vue";
+	import ClientTestimonial from "@/components/molecule/vendor/ClientTestimonial.vue";
 	import { products } from "@/data/products"
 	export default{
 		name: 'ProductByCategory',
@@ -53,7 +60,8 @@
 			TopBar,
 			ProductCard,
 			ProjectCardView,
-			OurClient
+			OurClient,
+			ClientTestimonial
 		},
 		computed: {
 			products() {
