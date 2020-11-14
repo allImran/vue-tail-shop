@@ -1,4 +1,3 @@
-
 <template>
 	<div class="container bg-white mx-auto shadow-md py-2 px-5 pb-10 mb-5">
 		<div class="flex mb-10">
