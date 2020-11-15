@@ -1,5 +1,5 @@
 <template>
-	<div class="container bg-white mx-auto py-1 px-5 my-10">
+	<div class="container bg-white mx-auto shadow-md py-1 px-5 my-10">
 		<div class="flex w-full">
 			<TextWithIcon
 				class="mt-3"

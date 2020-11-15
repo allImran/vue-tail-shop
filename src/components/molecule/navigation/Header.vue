@@ -3,7 +3,9 @@
 		<div class="container mx-auto py-3">
 			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-cols-6 gap-3">
 				<div class="col-span-2">
-					<img class="inline-block" src="/images/logo.png" alt="">
+					<router-link to="/">
+						<img class="inline-block" src="/images/logo.png" alt="">
+					</router-link>
 					<button 
 						class="bg-gray-800 w-42 rounded text-lg text-white uppercase hover:bg-blue-600 focus:outline-none px-4 py-2">
 						<span class="mdi mdi-menu pr-3"></span> <span class="text-sm font-semibold">All categories</span>

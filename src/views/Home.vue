@@ -1,4 +1,5 @@
 <template>
+  <VendorListCarousel />
 	<BrandSection>
 		<template v-slot:topbar>
 			<TopBar tabPosition="justify-end" tabMargin="ml-5"/>
@@ -9,12 +10,14 @@
 
 <script>
 // import { response } from "@/data/products";
-import BrandSection from "@/components/molecule/BrandList.vue";
-import TopBar from "@/components/molecule/navigation/TopBar.vue";
-import ProductSection from "@/components/molecule/product/ProductSection.vue";
+import VendorListCarousel  from "@/components/molecule/vendor/VendorListCarousel";
+import BrandSection from "@/components/molecule/BrandList";
+import TopBar from "@/components/molecule/navigation/TopBar";
+import ProductSection from "@/components/molecule/product/ProductSection";
 export default {
   name: "Home",
   components: {
+    VendorListCarousel,
     ProductSection,
     BrandSection,
     TopBar

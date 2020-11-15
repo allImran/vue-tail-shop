@@ -1,9 +1,9 @@
 <template>
-	<marquee
+	<div
 		class="py-1 text-sm"
 	>
 		**Sign up: Register to get the best offer
-	</marquee>
+	</div>
 </template>
 
 <script>
