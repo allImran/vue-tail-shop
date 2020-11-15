@@ -48,7 +48,69 @@
                     </div>
                 </div>
                 <div class="col-span-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni dolorem molestiae voluptatibus reprehenderit reiciendis, nulla itaque impedit quibusdam ducimus amet officiis minima deserunt blanditiis iure esse aliquid velit nesciunt, perferendis.
+                    <div class="border border-gray-300 py-5 px-3">
+                        <p class="text-sm text-gray-600 font-semibold">Vendor</p>
+                        <p class="text-blue-500 text-lg font-bold">SYS Interior BD.</p>
+                        <p class="text-sm text-gray-600 mt-5 font-semibold">Items</p>
+                        <p class="text-sm text-gray-600">Bricks, Tiles And other</p>
+
+                        <p class="text-sm text-gray-600 mt-5 font-semibold mb-2">Contact</p>
+                        <TextWithIcon
+                            text="+880935 558 8584"
+                            textStyle="text-sm text-gray-500 mb-1 ml-1"
+                            icon="mdi mdi-email"
+                            iconStyle="text-blue-500 text-md"
+                        />
+                        <TextWithIcon
+                            text="email@example.com"
+                            textStyle="text-sm text-gray-500 mb-1 ml-1"
+                            icon="mdi mdi-phone"
+                            iconStyle="text-blue-500 text-md"
+                        />
+                        <TextWithIcon
+                            text="12/2 Block C, Mirpur-12, Dhaka"
+                            textStyle="text-sm text-blue-500 mb-1 ml-1"
+                            icon="mdi mdi-phone"
+                            iconStyle="text-blue-500 text-md"
+                        />
+
+                        <div class="mt-10">
+                            <button
+                                class="text-white bg-blue-600 px-3 rounded-full mr-2"
+                            >
+                                Visit Store
+                            </button>
+                            <button
+                                class="text-blue-600 px-3 rounded-full border border-blue-400"
+                            >
+                                +Follow
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-300 py-5 px-3 mt-2">
+                        <TextWithIcon
+                            class="mb-2"
+                            text="Cash On Delivery"
+                            textStyle="text-sm text-gray-500 mb-1 ml-1"
+                            icon="mdi mdi-cash-check"
+                            iconStyle="text-blue-500 text-xl"
+                        />
+                        <TextWithIcon
+                            
+                            text="Warranty Available"
+                            textStyle="text-sm text-gray-500 mb-1 ml-1"
+                            icon="mdi mdi-google-maps"
+                            iconStyle="text-blue-500 text-xl"
+                        />
+                        <TextWithIcon
+                            
+                            text="Warranty Available"
+                            textStyle="text-sm text-gray-500 mb-1 ml-1"
+                            icon="mdi mdi-recycle"
+                            iconStyle="text-blue-500 text-xl"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
