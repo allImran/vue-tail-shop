@@ -2,7 +2,7 @@
 	<img 
 		:src="image" 
 		alt=""
-		class="w-32 h-32 shadow-md rounded-full" 
+		:class="`${heightWeight} shadow-md rounded-full`" 
 	>
 </template>
 
@@ -11,7 +11,12 @@
 		name: 'RoundImage',
 		props: {
 			image: {
+				tupe:String,
 				default: '/images/square.jpg'
+			},
+			heightWeight: {
+				tupe:String,
+				default: 'w-32 h-32'
 			}
 		}
 	}
