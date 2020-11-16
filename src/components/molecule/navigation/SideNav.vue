@@ -62,5 +62,8 @@
 </script>
 
 <style>
-	/* This is responseive design */
+	/* This is responseive design
+	
+		about page responsiveness
+	*/
 </style>
