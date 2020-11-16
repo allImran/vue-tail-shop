@@ -62,5 +62,5 @@
 </script>
 
 <style>
-	
+	/* This is responseive design */
 </style>
