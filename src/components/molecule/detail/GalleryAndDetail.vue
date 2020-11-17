@@ -46,6 +46,10 @@
 
                         </div>
                     </div>
+                    <div class="grid grid-cols-2 gap-1 mt-3">
+                        <TextWithBgImage title="."/>
+                        <TextWithBgImage title="."/>
+                    </div>  
                 </div>
                 <div class="col-span-2">
                     <div class="border border-gray-300 py-5 px-3">
@@ -126,6 +130,7 @@
     import TextWithIcon from '@/components/atom/TextWithIcon'
     import SizeBox from '@/components/atom/SizeBox'
     import IncrementBox from '@/components/atom/IncrementBox'
+    import TextWithBgImage from '@/components/atom/TextWithBgImage'
   export default {
     name: 'Gallery and detail',
     components:{
@@ -136,7 +141,8 @@
         StarBox,
         TextWithIcon,
         SizeBox,
-        IncrementBox
+        IncrementBox,
+        TextWithBgImage
     },
     props:{
 
