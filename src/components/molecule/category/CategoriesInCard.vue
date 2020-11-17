@@ -7,7 +7,7 @@
 			textStyle="text-gray-700 text-md truncate uppercase font-bold"
 		/>
 		<div class="grid grid-cols-6 gap-2">
-			<div 
+			<div
 				v-for="(item, index) in products"
 				:key="index"
 			>

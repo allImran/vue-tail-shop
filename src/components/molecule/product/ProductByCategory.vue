@@ -39,7 +39,7 @@
 		},
 		computed: {
 			products() {
-				return products.slice(0, 15);
+				return products.slice(0, 2);
 			}
 		}
 	}

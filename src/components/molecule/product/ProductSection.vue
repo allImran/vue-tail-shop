@@ -4,10 +4,16 @@
     v-for="i in 3"
     :key="i"
   >
-    <div class="w-1/5 ">
+    <div class="w-1/5 hidden md:block lg:block xl:block">
       <SideNav />
     </div>
-    <div class="w-4/5 bg-white px-6 py-4">
+
+    <div class="sm:w-full md:w-4/5 lg:w-4/5 xl:w-4/5 bg-white px-6 py-4">
+
+
+      <div class="hidden sm:block md:hidden">
+        <SideNav />
+      </div>
 
       <TopBar
         tabPosition="justify-start"
@@ -17,7 +23,7 @@
         </template>
       </TopBar>
 
-      <div class="grid git-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-6 mt-6">
+      <div class="grid git-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 mt-6">
         <div v-for="(product, i) in products" :key="i">
           <ProductCard :id="product.id" />
         </div>
