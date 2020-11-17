@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white py-3">
+    <div class="bg-white py-3 border-b">
         <div class="container mx-auto">
             <BreadCrumb />
             <div class="grid grid-cols-10 gap-2">
