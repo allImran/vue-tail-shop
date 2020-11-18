@@ -21,7 +21,9 @@
             <component :is="currentTabComponent"></component>
           </div>
           <div class="col-span-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perferendis debitis eius nemo adipisci et ad officia, iusto, corrupti numquam? Expedita quia repellendus incidunt quae laboriosam fugit! At, nihil, amet.
+            <div class="pb-5 pt-3 px-3 border border ">
+              <p class="font-semibold mb-5 text-lg">Frequently place together</p>
+            </div>
           </div>
         </div>
       </div>
