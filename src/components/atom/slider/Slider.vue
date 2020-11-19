@@ -8,8 +8,19 @@
             >
               <img :src="item.path" />
         </SliderItem>
-      <button @click="next" class="next">Next</button>
-      <button @click="prev" class="prev">Prev</button>
+      <button v-show="nav" @click="next" class="next">Next</button>
+      <button v-show="nav" @click="prev" class="prev">Prev</button>
+      <div v-show="dots" class="dot-area">
+        <u class="m-0 flex">
+          <li 
+            v-for="(item, index) in items"
+            :key="index"
+            class="dot-item"
+            @click="activeSlideItem(index)"
+            :class="{'active': visibleSlide == index }"
+          ></li>
+        </u>
+      </div>
   </div>
 </template>
 
@@ -23,6 +34,14 @@ export default {
     items: {
       type: Array,
       required: true
+    },
+    dots: {
+      type: Boolean,
+      default: () => true
+    },
+    nav: {
+      type: Boolean,
+      default: () => false
     }
   },
   data() {
@@ -49,6 +68,9 @@ export default {
             }else {
                 this.visibleSlide--;
             }
+        },
+        activeSlideItem(index) {
+          this.visibleSlide = index;
         }
     }
 }
@@ -58,7 +80,7 @@ export default {
   .slider {
     position: relative;
     width: 100%;
-    height: 550px;
+    height: 504px;
     overflow: hidden;
   }
 
@@ -83,4 +105,21 @@ export default {
     left: 0;
   }
 
+  .dot-area {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+  .dot-item {
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    background: #EFEFEF;
+    border-radius: 100%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .dot-item.active {
+    background: #CECECE;
+  }
 </style>

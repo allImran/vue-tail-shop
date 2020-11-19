@@ -1,17 +1,19 @@
 <template>
-  <div class="container mx-auto">
-       <Carousel
+ <div class="container mx-auto">
+   <Slider
         :items="slides"
-      >
-      </Carousel>
-  </div>
+        :dots="true"
+    >
+    </Slider>
+    
+ </div>
 </template>
 
 <script>
-import Carousel  from "@/components/atom/carousel/Carousel"
+import Slider  from "@/components/atom/slider/Slider"
 export default {
     components: {
-         Carousel,
+        Slider
     },
     data() {
         return {
@@ -21,6 +23,6 @@ export default {
                 {id: 3, path: '/images/sliders/03.png', caption: 'lorem ipsum is dummey text content'},
             ],
         }
-    } 
+    }
 }
 </script>
