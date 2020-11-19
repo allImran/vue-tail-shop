@@ -11,8 +11,8 @@
 			</button>
 		</div>
 
-		<slot name="nav"></slot>
-		
+		<slot name="nav" class="absolute"></slot>
+
 	</div>
 </template>
 

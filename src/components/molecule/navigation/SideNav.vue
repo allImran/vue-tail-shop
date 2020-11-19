@@ -5,7 +5,7 @@
     <span class="mdi mdi-chair-rolling text-3xl mr-2 text-gray-100"></span>
 		<span class="uppercase text-sm font-semibold text-gray-100">Some Menu</span>
     </span>
-    
+
     <div class="relative md:hidden sm:block">
       <select
           class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"

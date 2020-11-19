@@ -19,7 +19,7 @@
         tabPosition="justify-start" class="hidden md:block"
       >
         <template v-slot:nav>
-          <NextPrev @next="onNext" @prev="onPrev"/>
+          <NextPrev class="relative" @next="onNext" @prev="onPrev"/>
         </template>
       </TopBar>
 
