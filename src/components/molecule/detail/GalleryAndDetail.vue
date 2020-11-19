@@ -101,14 +101,12 @@
                             iconStyle="text-blue-500 text-xl"
                         />
                         <TextWithIcon
-                            
                             text="Warranty Available"
                             textStyle="text-sm text-gray-500 mb-1 ml-1"
                             icon="mdi mdi-google-maps"
                             iconStyle="text-blue-500 text-xl"
                         />
                         <TextWithIcon
-                            
                             text="Warranty Available"
                             textStyle="text-sm text-gray-500 mb-1 ml-1"
                             icon="mdi mdi-recycle"
