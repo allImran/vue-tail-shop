@@ -20,6 +20,7 @@
 				<ProductCard :id="item.id" />
 			</div>
 		</div>
+
 		<ProjectCardView>
 			<template v-slot:top>
 				<div class="flex justify-between mt-5 mb-3 pr-3">
