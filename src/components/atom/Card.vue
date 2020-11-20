@@ -1,7 +1,7 @@
 <template>
 	<div class="flex flex-col">
 		<div :class="`p-1 ${border}`">
-			<img class="card-image w-32" :src="image" alt="">
+			<img class="card-image w-32 m-auto" :src="image" alt="">
 		</div>
 		<router-link to="#">
 			<p :class="`${titleStyle}`">{{ title }}</p>
