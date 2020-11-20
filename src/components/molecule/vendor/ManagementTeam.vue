@@ -1,7 +1,7 @@
 <template>
     <slot name="top"></slot>
 
-    <div class="grid grid-cols-5 gap-4 px-5">
+    <div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 px-5">
         <div
             v-for="(n, i) in 5"
             :key="i"
