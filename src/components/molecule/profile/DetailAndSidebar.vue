@@ -5,8 +5,12 @@
                 <TopBar 
                     tabMargin="ml-5 uppercase font-semibold"
                 />
+
                 <About />
                 <Certificate />
+                <Experience />
+                <Education />
+
             </div>
             <div class="">
                 <Sidebar />
@@ -20,6 +24,8 @@
     import TopBar from '@/components/molecule/navigation/TopBar'
     import About from '@/components/molecule/profile/About'
     import Certificate from '@/components/molecule/profile/Certificate'
+    import Experience from '@/components/molecule/profile/Experience'
+    import Education from '@/components/molecule/profile/Education'
     import Sidebar from '@/components/molecule/profile/Sidebar'
   export default {
     name: '',
@@ -27,7 +33,9 @@
         TopBar,
         About,
         Sidebar,
-        Certificate
+        Certificate,
+        Experience,
+        Education
     },
     props:{
 
