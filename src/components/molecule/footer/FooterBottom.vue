@@ -16,21 +16,21 @@
                   icon="mdi mdi-phone"
                   iconStyle="text-gray-600 text-2xl"
                   text="+990227 44488"
-                  textStyle="text-gray-700 text-md"
+                  textStyle="text-gray-700 text-sm"
               />
 
               <TextWithIcon
                   icon="mdi mdi-message"
                   iconStyle="text-gray-600 text-2xl"
                   text="support@domain.com"
-                  textStyle="text-gray-700 text-md"
+                  textStyle="text-gray-700 text-sm"
               />
 
               <TextWithIcon
                   icon="mdi mdi-google-maps"
                   iconStyle="text-gray-600 text-2xl"
                   text="Lorem ipsum dolor siectetur adipisicin"
-                  textStyle="text-gray-700 text-md"
+                  textStyle="text-gray-700 text-sm"
               />
 
 
