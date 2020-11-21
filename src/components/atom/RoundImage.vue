@@ -11,11 +11,11 @@
 		name: 'RoundImage',
 		props: {
 			image: {
-				tupe:String,
+				type:String,
 				default: '/images/square.jpg'
 			},
 			heightWeight: {
-				tupe:String,
+				type:String,
 				default: 'w-32 h-32'
 			}
 		}
