@@ -1,5 +1,5 @@
 <template>
-	<div class="sm:bg-purple-500 md:bg-gray-700 py-5">
+	<div class="bg-purple-500 md:bg-gray-700 py-5">
 		<div class="container flex-wrap flex mx-auto">
 
 			<div class="w-full sm:w-2/4 lg:w-4/12 p-2 flex items-center hidden md:block lg:block xl:block">

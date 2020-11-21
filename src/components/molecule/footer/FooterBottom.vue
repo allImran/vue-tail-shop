@@ -6,7 +6,7 @@
         <div class="col-span-6 md:hidden sm:block">
           <div class="flex">
 
-            <div class="w-1/2">
+            <div class="w-1/2 h-32 flex items-center">
               <img src="/images/logo.png" alt="">
             </div>
 
