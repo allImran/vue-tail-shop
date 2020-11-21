@@ -6,8 +6,8 @@
 			text="shop by categories"
 			textStyle="text-gray-700 text-md truncate uppercase font-bold"
 		/>
-		<div class="grid grid-cols-6 gap-2">
-			<div 
+		<div class="grid md:grid-cols-6 sm:grid-cols-3 gap-2">
+			<div
 				v-for="(item, index) in products"
 				:key="index"
 			>
@@ -24,7 +24,7 @@
 	import Card from "@/components/atom/Card"
 	import TextWithIcon from "@/components/atom/TextWithIcon"
 	export default{
-		name: 'CaegoryCardView',
+		name: 'CategoryCardView',
 		components: {
 			TextWithIcon,
 			Card

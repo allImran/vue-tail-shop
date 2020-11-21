@@ -28,7 +28,7 @@
 		</div>
 
 		<div class="grid grid-cols-10 gap-4 px-10">
-			<div class="mt-5 col-span-3 pr-10">
+			<div class="mt-5 md:col-span-3 sm:col-span-10 pr-10">
 				<p class="text-2xl text-gray-700 font-bold capitalize">Liva solution ltd.</p>
 				<p class="text-md font-semibold text-gray-700 mb-5">Brick, Tiles and Ciramic Materials</p>
 				<TextWithIcon
@@ -50,7 +50,8 @@
 					textStyle="text-gray-700 text-md"
 				/>
 			</div>
-			<div class="col-span-7 border-l pl-10">
+
+			<div class="md:col-span-7 sm:col-span-10 md:border-l md:pl-10 sm:pl-0">
 				<p class="text-xl font-bold text-gray-700 mb-2">About</p>
 				<p class="text-sm text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quasi voluptatem illo, unde earum quos. Soluta in aperiam quidem facilis, adipisci, enim eius optio ipsa, minima simil dipisci, enim eius optio ipsa, minima simil dipisci, enim eius optio ipsa, minima similique aliquid est doloremque earum, architecto ur? Aperiam itaque aliquid adipisci. Omnis consequuntur sed aut in magni perferendis laborum quod ab illo ipsam quae nisi rerum, mollitia nihil, sunt non ratione repellendus voluptate blanditiis dolorum voluptates temporibus enim tempora, magnam! Dolorem quas sit modi officia fugit adipisci ipsa consectetur illo animi, laudantium totam, recusandae qui voluptatibus. Aspernatur non aut voluptatem sit, commodi laboriosam unde libero suscipit asperiores, eveniet, odio magnam impedit, at. Quaerat, explicabo, veniam?</p>
 			</div>

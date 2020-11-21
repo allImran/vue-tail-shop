@@ -11,7 +11,7 @@
 			<TopBar  tabMargin="mr-5"/>
 		</div>
 
-		<div class="grid grid-cols-5 gap-2 px-3">
+		<div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  gap-2 px-3">
 			<div 
 				class="mb-5" 
 				v-for="(item, index) in products"
@@ -20,6 +20,7 @@
 				<ProductCard :id="item.id" />
 			</div>
 		</div>
+
 		<ProjectCardView>
 			<template v-slot:top>
 				<div class="flex justify-between mt-5 mb-3 pr-3">

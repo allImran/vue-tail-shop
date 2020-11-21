@@ -3,7 +3,7 @@
   <Header />
   <HeaderBottom />
   <slot />
-  <FooterTop/>
+  <FooterTop class="hidden md:block lg:block xl:block"/>
   <FooterMiddle/>
   <FooterBottom/>
 </template>

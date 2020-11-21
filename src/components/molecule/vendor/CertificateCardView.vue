@@ -1,6 +1,6 @@
 <template>
     <p class="uppercase font-bold text-gray-700 mb-5 mt-10">Certification, Authorization & Licences</p>
-    <div class="grid grid-cols-5 gap-4 px-5">
+    <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-4 px-5">
         <Card 
             v-for="(n, i) in 5"
             :key="i"
