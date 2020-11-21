@@ -2,9 +2,9 @@
     <div class="container mx-auto shadow-md rounded relative">
         <div class="pt-20 pb-10 bg-blue-600 rounded">
             <div class="ml-56">
-                <p class="text-gray-100 text-lg font-semibold">John Abraham</p>
-                <p class="text-gray-100 text-md pb-4">Interior Designer at Sysbuild</p>
-                <p class="text-gray-100 text-sm">Interior Designer, Interior Specialist, Architct</p>
+                <p class="text-gray-100 text-base md:text-lg font-semibold">John Abraham</p>
+                <p class="text-gray-100 text-sm md:text-base pb-4">Interior Designer at Sysbuild</p>
+                <p class="text-gray-100 text-xs md:text-sm">Interior Designer, Interior Specialist, Architct</p>
             </div>
         </div>
 
@@ -20,7 +20,7 @@
               <a
                     class="rounded-full hidden md:block py-1 px-4 bg-blue-500 text-xs text-gray-100 capitalize mr-5"
                     href="#"> 
-                    <span class="mdi mdi-printer"></span> 
+                    <span class="mdi mdi-printer"></span>
                     download company profile
                 </a>
             </div>
@@ -29,7 +29,6 @@
             <a
                 class="rounded-full py-1 px-4 bg-blue-500 text-xs text-gray-100 capitalize mr-5"
                 href="#">
-              <span class="mdi mdi-printer"></span>
               download company profile
             </a>
           </div>
