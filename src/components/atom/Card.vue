@@ -1,7 +1,7 @@
 <template>
 	<div class="flex flex-col">
 		<div :class="`p-1 ${border}`">
-			<img class="card-image w-32 m-auto" :src="image" alt="">
+			<img :class="`card-image ${imgStyle}`" :src="image" alt="">
 		</div>
 		<router-link to="#">
 			<p :class="`${titleStyle}`">{{ title }}</p>
@@ -23,6 +23,9 @@
 			},
 			image: {
 				default: '/images/certificate.png'
+			},
+			imgStyle: {
+				default: 'w-32'
 			},
 			title: {
 				default: 'Defaule title'

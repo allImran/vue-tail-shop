@@ -19,7 +19,7 @@
 	.borderedTitle::after{
 		height: 3px;
 		display: block;
-		width: 100px;
+		width: 70px;
 		background: #3572ee;
 		border-right: 1px white;
 		margin-top: 3px;
