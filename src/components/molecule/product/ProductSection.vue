@@ -11,7 +11,7 @@
     <div class="sm:w-full md:w-4/5 lg:w-4/5 xl:w-4/5 bg-white px-6 py-4">
 
 
-      <div class="hidden sm:block md:hidden">
+      <div class="md:hidden">
         <SideNav />
       </div>
 

@@ -23,7 +23,7 @@
 
   </div>
 
-  <div class="sm:flex sm:flex-wrap md:flex-col">
+  <div class="flex flex-wrap md:flex-col">
     <button
         v-for="(item, index) in items"
         :key="index"
