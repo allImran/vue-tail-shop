@@ -7,7 +7,7 @@
 				icon="mdi mdi-check-decagram"
 				iconStyle="text-pink-600 text-xl"
 				text="Shop by items"
-				textStyle="text-gray-700 font-bold text-md truncate uppercase"
+				textStyle="text-gray-700 font-bold text-xs sm:text-md truncate uppercase"
 			/>
 			<TopBar tabPosition="justify-end" tabMargin="ml-5"/>
 		</div>
