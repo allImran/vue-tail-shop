@@ -14,7 +14,7 @@
       <div
           v-for="n in 12"
           :key="n"
-          class="xl:w-1/6 md:w-1/6 sm:w-1/4">
+          class="xl:w-1/6 md:w-1/6 w-1/4">
         <img class="w-full" src="/images/brand.png" alt="">
       </div>
     </div>
