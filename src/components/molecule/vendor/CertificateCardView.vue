@@ -1,6 +1,6 @@
 <template>
     <p class="uppercase font-bold text-gray-700 mb-5 mt-10">Certification, Authorization & Licences</p>
-    <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-4 px-5">
+    <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-2 sm:gap-4 px-5">
         <Card 
             v-for="(n, i) in 5"
             :key="i"
@@ -8,6 +8,8 @@
             titleStyle="font-semibold text-sm text-gray-700 capitalize"
             border="none"
             subTitle="more detail will be here"
+            subTitleStyle="text-xs sm:text-sm"
+            detailStyle="text-xs sm:text-sm"
             detail="Lorem ipsum dolor sit amet, consectetur adipisicin sed do eiusmod tempor ncididunt"
         />
     </div>
