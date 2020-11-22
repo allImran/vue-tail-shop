@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto mt-5 mb-5">
         <div class="grid grid-cols-3 gap-10 rounded">
-            <div class="col-span-2 bg-white shadow-md pt-4">
+            <div class="col-span-3 sm:col-span-2 bg-white shadow-md pt-4">
                 <TopBar 
                     tabMargin="ml-5 uppercase font-semibold"
                 />
@@ -12,7 +12,7 @@
                 <Education />
 
             </div>
-            <div class="">
+            <div class="col-span-3 sm:col-span-1">
                 <Sidebar />
             </div>
         </div>
