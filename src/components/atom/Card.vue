@@ -4,7 +4,7 @@
 			<img class="m-auto" :class="`card-image ${imgStyle}`" :src="image" alt="">
 		</div>
 		<router-link to="#">
-			<p :class="`${titleStyle}`">{{ title }}</p>
+			<p :class="`${titleStyle}`" class="text-xs sm:text-base">{{ title }}</p>
 		</router-link>
 			<p :class="`${subTitleStyle}`">{{ subTitle }}</p>
 			<p :class="`${detailStyle}`">{{ detail }}</p>
