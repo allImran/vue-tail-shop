@@ -1,6 +1,8 @@
 <template>
-    <div class="container mx-auto my-5 rounded">
-        <Add />
+    <div class="bg-white">
+        <div class="container mx-auto py-5 rounded">
+            <Add />
+        </div>
     </div>
 </template>
 
