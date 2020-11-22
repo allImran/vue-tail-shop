@@ -2,7 +2,7 @@
   <div class="bg-white pt-10 pb-5">
     <div class="container  mx-auto rounded border border-gray-300 p-4">
       <p class="font-semibold mb-3">Similar Product</p>
-      <div class="grid grid-cols-5 gap-2">
+      <div class="grid md:grid-cols-5 grid-cols-2 gap-2">
         <div 
           class="mb-5" 
           v-for="(item, index) in products"

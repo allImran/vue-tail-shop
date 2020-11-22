@@ -5,7 +5,7 @@
 			v-for="(link, index) in links"
 			:key="index"
 			:href="link.link"
-			class="w-5 mx-1"
+			class="w-5 mx-1 text-xs sm:text-base"
 		>
 			<img :src="link.icon" alt="">
 		</a>
