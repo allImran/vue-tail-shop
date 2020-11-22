@@ -1,7 +1,7 @@
 <template>
   <div class="flex bg-blue-500 items-center px-5 py-2 mb-3 justify-between">
 
-    <span class="item-center">
+    <span class="flex items-center">
     <span class="mdi mdi-chair-rolling text-3xl mr-2 text-gray-100"></span>
 		<span class="uppercase text-sm font-semibold text-gray-100">Some Menu</span>
     </span>
@@ -23,7 +23,7 @@
 
   </div>
 
-  <div class="sm:flex sm:flex-wrap md:flex-col">
+  <div class="flex flex-wrap md:flex-col">
     <button
         v-for="(item, index) in items"
         :key="index"

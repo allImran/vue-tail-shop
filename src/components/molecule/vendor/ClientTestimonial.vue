@@ -1,6 +1,6 @@
 <template>
     <slot name="top"></slot>
-    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4 px-3">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-3">
       <div
         v-for="(n, i) in 4"
         :key="i"
@@ -12,8 +12,8 @@
                 image="/images/client.jpg"
             />
             <div>
-                <p class=" text-gray-800 uppercase font-bold">John doe</p>
-                <p class=" text-sm text-gray-700 text-sm">CEO, Thundeal Ltd</p>
+                <p class="text-gray-800 uppercase font-bold">John doe</p>
+                <p class="text-sm text-gray-700">CEO, Thundeal Ltd</p>
             </div>
             <p class="mt-5 text-gray-700 text-xs">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Alias dolor hic, officiis cum provident autem laborum vel deleniti id ipsa enim. Distinctio, officia. Soluta et obcaecati beatae dolor. Accusamus, nihil.</p>
       </div>

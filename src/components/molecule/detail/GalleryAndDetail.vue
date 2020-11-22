@@ -49,7 +49,7 @@
                     <div class="grid grid-cols-2 gap-1 mt-3">
                         <TextWithBgImage title="."/>
                         <TextWithBgImage title="."/>
-                    </div>  
+                    </div>
                 </div>
                 <div class="col-span-2">
                     <div class="border border-gray-300 py-5 px-3">
@@ -163,5 +163,5 @@
 </script>
 
 <style>
-  
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<div class="sm:bg-purple-500 md:bg-gray-700 py-5">
+	<div class="bg-purple-500 md:bg-gray-700 py-5">
 		<div class="container flex-wrap flex mx-auto">
 
 			<div class="w-full sm:w-2/4 lg:w-4/12 p-2 flex items-center hidden md:block lg:block xl:block">
@@ -36,11 +36,11 @@
 						<span>Facebook</span>
 					</a>
 					<a href="" class="text-gray-200 text-center sm:text-xs md:text-base">
-						<span class="mdi mdi-twitter mr-2 sm:ml-2"></span>
+						<span class="mdi mdi-twitter mr-2 ml-2 md:ml-0"></span>
 						<span>Twitter</span>
 					</a>
 					<a href="" class="text-gray-200 text-center sm:text-xs md:text-base">
-						<span class="mdi mdi-linkedin mr-2 sm:ml-2"></span>
+						<span class="mdi mdi-linkedin mr-2 ml-2 md:ml-0"></span>
 						<span>Linkedin</span>
 					</a>
 				</div>

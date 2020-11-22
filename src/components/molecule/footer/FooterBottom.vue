@@ -6,7 +6,7 @@
         <div class="col-span-6 md:hidden sm:block">
           <div class="flex">
 
-            <div class="w-1/2">
+            <div class="w-1/2 h-32 flex items-center">
               <img src="/images/logo.png" alt="">
             </div>
 
@@ -16,21 +16,21 @@
                   icon="mdi mdi-phone"
                   iconStyle="text-gray-600 text-2xl"
                   text="+990227 44488"
-                  textStyle="text-gray-700 text-md"
+                  textStyle="text-gray-700 text-sm"
               />
 
               <TextWithIcon
                   icon="mdi mdi-message"
                   iconStyle="text-gray-600 text-2xl"
                   text="support@domain.com"
-                  textStyle="text-gray-700 text-md"
+                  textStyle="text-gray-700 text-sm"
               />
 
               <TextWithIcon
                   icon="mdi mdi-google-maps"
                   iconStyle="text-gray-600 text-2xl"
                   text="Lorem ipsum dolor siectetur adipisicin"
-                  textStyle="text-gray-700 text-md"
+                  textStyle="text-gray-700 text-sm"
               />
 
 
