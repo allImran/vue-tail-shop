@@ -1,4 +1,5 @@
 <template>
+    <div class="bg-white">
     <div class="container mx-auto">
         <div class="flex items-center px-5 bg-gradient-to-r from-blue-500 to-teal-500">
             <span class="mdi mdi-phone"></span>
@@ -18,6 +19,7 @@
             </div>
         </div>
     </div>
+</div>
 </template>
 
 <script>

@@ -6,7 +6,7 @@
 				class="font-semibold text-sm hover:text-purple-800 pr-5 mb-3"
 				v-for="n in 19"
 				:key="n"
-				to="/">{{ link() }}
+				to="/category">{{ link() }}
 			</router-link>
 		</div>
 	</div>
