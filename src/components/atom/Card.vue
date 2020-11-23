@@ -3,9 +3,11 @@
 		<div :class="`p-1 ${border}`">
 			<img class="m-auto" :class="`card-image ${imgStyle}`" :src="image" alt="">
 		</div>
+
 		<router-link to="#">
 			<p :class="`${titleStyle}`" class="text-xs sm:text-base">{{ title }}</p>
 		</router-link>
+    
 			<p :class="`${subTitleStyle}`">{{ subTitle }}</p>
 			<p :class="`${detailStyle}`">{{ detail }}</p>
 	</div>
@@ -40,7 +42,10 @@
 			detail: String,
 			detailStyle: {
 				default: 'text-gray-500 text-sm w-full'
-			}, 
+			},
+			link: {
+				default: '/subcategory'
+			}
 
 		}
 	}

@@ -37,7 +37,7 @@
               <span class="text-xs">Rep List</span>
             </router-link>
 
-            <router-link class="flex items-center text-gray-700 xl:mr-5" to="#">
+            <router-link class="flex items-center text-gray-700 xl:mr-5" to="/profile">
               <span class="mdi text-3xl mdi-account-circle"></span>
               <span>Login</span>
             </router-link>
