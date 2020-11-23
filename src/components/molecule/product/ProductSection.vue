@@ -23,7 +23,7 @@
         </template>
       </TopBar>
 
-      <div class="grid git-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 mt-6">
+      <div class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 mt-6">
         <div v-for="(product, i) in products" :key="i">
           <ProductCard :id="product.id" />
         </div>

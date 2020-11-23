@@ -6,9 +6,9 @@
             icon="mdi mdi-account"
             iconStyle=" text-xl text-blue-600"
         />
-        <div class="grid grid-cols-3 gap-4 px-5 border-b pb-10">
+        <div class="grid md:grid-cols-3 grid-cols-2 sm:gap-4 gap-2 px-5 border-b pb-10">
             <Card 
-                v-for="(n, i) in 3"
+                v-for="(n, i) in 6"
                 :key="i"
                 title="Buet certified brand"
                 titleStyle="font-semibold text-sm text-gray-700 capitalize"

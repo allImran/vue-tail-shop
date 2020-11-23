@@ -1,11 +1,13 @@
 <template>
 	<div class="flex flex-col">
 		<div :class="`p-1 ${border}`">
-			<img :class="`card-image ${imgStyle}`" :src="image" alt="">
+			<img class="m-auto" :class="`card-image ${imgStyle}`" :src="image" alt="">
 		</div>
-		<router-link :to="link">
-			<p :class="`${titleStyle}`">{{ title }}</p>
+
+		<router-link to="#">
+			<p :class="`${titleStyle}`" class="text-xs sm:text-base">{{ title }}</p>
 		</router-link>
+    
 			<p :class="`${subTitleStyle}`">{{ subTitle }}</p>
 			<p :class="`${detailStyle}`">{{ detail }}</p>
 	</div>

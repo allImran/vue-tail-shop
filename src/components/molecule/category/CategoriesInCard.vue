@@ -6,7 +6,7 @@
 			text="shop by categories"
 			textStyle="text-gray-700 text-md truncate uppercase font-bold"
 		/>
-		<div class="grid md:grid-cols-6 sm:grid-cols-3 gap-2">
+		<div class="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-2">
 			<div
 				v-for="(item, index) in products"
 				:key="index"

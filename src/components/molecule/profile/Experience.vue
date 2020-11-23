@@ -7,9 +7,9 @@
             iconStyle=" text-xl text-blue-600"
         />
         <div class="px-5 mt-5 border-b pb-10">
-            <div class="grid grid-cols-4 gap-5">
+            <div class="grid lg:grid-cols-4 grid-cols-3 gap-5">
                 <Bordered 
-                    v-for="(n, i) in 3"
+                    v-for="(n, i) in 6"
                     :key="i"
                 />
             </div>
