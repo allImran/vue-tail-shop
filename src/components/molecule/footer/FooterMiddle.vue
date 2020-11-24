@@ -12,16 +12,16 @@
 				</div>
 			</div>
 
-			<div class="w-full sm:w-2/4 lg:w-5/12 flex items-center">
+			<div class="w-1/2 sm:w-2/4 lg:w-5/12 flex items-center">
 				<div class="flex w-full p-2 items-center">
           <button
-              class="bg-black rounded text-white font-bold hover:bg-blue-800 focus:outline-none px-3 h-10 xl:hidden lg:hidden md:hidden sm:block">
+              class="bg-black rounded text-white font-bold hover:bg-blue-800 focus:outline-none text-xs md:text-base px-1 sm:px-3 h-10 xl:hidden lg:hidden md:hidden sm:block">
             Subscribe
           </button>
 
 					<input 
 						placeholder="Your email address"
-						class="hover:bg-white border-solid border border-blue-400 rounded focus:border-blue-400 focus:outline-none w-full h-10 px-3" type="text">
+						class="hover:bg-white border-solid border border-blue-400 rounded focus:border-blue-400 focus:outline-none w-3/4 sm:w-full h-10 px-3" type="text">
 					<button 
 						class="bg-blue-700 rounded text-white font-bold hover:bg-blue-800 focus:outline-none px-3 h-10 hidden md:block lg:hidden xl:block">
 						Subscribe
@@ -29,18 +29,18 @@
 				</div>
 			</div>
 
-			<div class="w-full sm:w-2/4 lg:w-3/12 flex items-center pl-5">
+			<div class="w-1/2 sm:w-2/4 lg:w-3/12 flex items-center pl-5">
 				<div class="flex w-full p-2 items-center justify-center">
-					<a href="" class="text-gray-200 text-center sm:text-xs md:text-base">
-						<span class="mdi  mdi-facebook mr-2"></span>
+					<a href="" class="text-gray-200 text-center text-xs md:text-base">
+						<span class="mdi  mdi-facebook mr-1 sm:mr-2"></span>
 						<span>Facebook</span>
 					</a>
-					<a href="" class="text-gray-200 text-center sm:text-xs md:text-base">
-						<span class="mdi mdi-twitter mr-2 ml-2 md:ml-0"></span>
+					<a href="" class="text-gray-200 text-center text-xs md:text-base">
+						<span class="mdi mdi-twitter mr-1 sm:mr-2 ml-1 sm:ml-2 md:ml-0"></span>
 						<span>Twitter</span>
 					</a>
-					<a href="" class="text-gray-200 text-center sm:text-xs md:text-base">
-						<span class="mdi mdi-linkedin mr-2 ml-2 md:ml-0"></span>
+					<a href="" class="text-gray-200 text-center text-xs md:text-base">
+						<span class="mdi mdi-linkedin mr-1 sm:mr-2 ml-1 sm:ml-2 md:ml-0"></span>
 						<span>Linkedin</span>
 					</a>
 				</div>
