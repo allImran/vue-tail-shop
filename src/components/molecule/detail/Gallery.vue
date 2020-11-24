@@ -1,7 +1,7 @@
 <template>
     <img
-        class="w-full h-56 object-cover my-2"
-        src="/images/interior2.png" 
+        class="w-full h-56 object-fill my-2"
+        src="/images/interior2.png"
         alt=""
     >
     <div class="flex">
@@ -11,7 +11,7 @@
             :key="i"
         >
             <img
-                class="h-16 w-24 object-cover my-2 "
+                class="h-16 w-24 object-fill my-2 "
                 src="/images/interior1.jpg" 
                 alt=""
             >

@@ -44,9 +44,9 @@
                   Place Requirement
                 </button>
 
-                <span class="mdi mdi-heart ml-5 text-gray-600 text-3xl"></span>
-                <span class="text-gray-500 mx-3">|</span>
-                <span class="mdi mdi-share text-gray-600 text-3xl"></span>
+                <span class="mdi mdi-heart ml-2 sm:ml-5 text-gray-600 text-base sm:text-3xl"></span>
+                <span class="text-gray-500 mx-2 sm:mx-3">|</span>
+                <span class="mdi mdi-share text-gray-600 text-base sm:text-3xl"></span>
               </div>
 
             </div>
