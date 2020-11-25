@@ -36,11 +36,11 @@
 						<span>Facebook</span>
 					</a>
 					<a href="" class="text-gray-200 text-center text-xs md:text-base">
-						<span class="mdi mdi-twitter mr-1 sm:mr-2 ml-1 sm:ml-2 md:ml-0"></span>
+						<span class="mdi mdi-twitter mr-1 sm:mr-2 ml-1 sm:ml-2"></span>
 						<span>Twitter</span>
 					</a>
 					<a href="" class="text-gray-200 text-center text-xs md:text-base">
-						<span class="mdi mdi-linkedin mr-1 sm:mr-2 ml-1 sm:ml-2 md:ml-0"></span>
+						<span class="mdi mdi-linkedin mr-1 sm:mr-2 ml-1 sm:ml-2"></span>
 						<span>Linkedin</span>
 					</a>
 				</div>
