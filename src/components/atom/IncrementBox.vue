@@ -8,7 +8,7 @@
         <span class="text-xl font-semibold">{{ value }}</span>
         <button
             @click="decrement"
-            class="px-3 text-xl text-gray-600 focus:outline-none">
+            class="px-3 text-base sm:text-xl text-gray-600 focus:outline-none">
             <span class="mdi mdi-minus"></span>
         </button>
     </div>

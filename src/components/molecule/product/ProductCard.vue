@@ -1,7 +1,7 @@
 <template>
 	<div class="product-card">
 		<router-link to="/anyting">	
-		<div class="product-card__image-area" style="background-image: url('/images/p1.png')">
+		<div class="product-card__image-area" style="background-image: url('/images/p1.png');background-size: 100% 100%">
 			
 			<div class="product-card__cart-icon simptip-position-bottom simptip-fade" data-tooltip="I'm a tooltip with fade effect">
 				<span class="mdi mdi-cart text-gray-100"></span>

@@ -6,7 +6,7 @@
             :index="index"
             :visibleSlide="visibleSlide"
             >
-              <img :src="item.path" />
+              <img class="h-full" :src="item.path" />
         </SliderItem>
       <button v-show="nav" @click="next" class="next">Next</button>
       <button v-show="nav" @click="prev" class="prev">Prev</button>
@@ -80,7 +80,8 @@ export default {
   .slider {
     position: relative;
     width: 100%;
-    height: 504px;
+    /*height: 504px;*/
+    height: 450px;
     overflow: hidden;
   }
 
