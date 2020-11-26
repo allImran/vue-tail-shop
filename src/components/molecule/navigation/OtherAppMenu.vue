@@ -1,5 +1,5 @@
 <template>
-  <div class="origin-top-right absolute right-0 mt-2 w-64 rounded-md shadow-lg">
+  <div class="origin-top-right absolute md:right-0 mt-2 w-64 rounded-md shadow-lg">
     <div class="rounded-md bg-white shadow-xs">
       <div class="py-3">
         <div class="grid grid-cols-3 gap-4">
