@@ -24,9 +24,16 @@
 
         <div class="col-span-3 md:ml-4 xl:mt-1">
           <div class="flex justify-between">
-            <router-link class="flex items-center text-gray-700" to="#">
-              <img width="30" src="/images/icons/circled_menu.svg" alt="">
-            </router-link>
+            <div class="relative mt-2">
+              <button @click="open = !open" class="flex items-center text-gray-700" to="#">
+                <img width="30" src="/images/icons/circled_menu.svg" alt="">
+              </button>
+
+              <transition name="slide">
+                <OtherAppMenu   v-show="open" />
+              </transition>
+            </div>
+
 
             <router-link class="flex w-10 items-center text-gray-700 " to="#">
               <span class="mdi text-3xl mdi-cart"></span>
@@ -57,14 +64,17 @@
 
 <script>
 import MegaMenu from "@/components/molecule/navigation/MegaMenu"
+import OtherAppMenu from "@/components/molecule/navigation/OtherAppMenu"
 export default {
   name: 'HeaderComponent',
   components: {
-    MegaMenu
+    MegaMenu,
+    OtherAppMenu
   },
   data() {
     return {
-      toogle: false
+      toogle: false,
+      open: false
     }
   }
 }

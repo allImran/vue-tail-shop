@@ -1,6 +1,6 @@
 <template>
-	<div class="bg-white py-2">
-		<div class="flex justify-end">
+	<div class="container mx-auto bg-white py-2">
+		<div class="flex">
 			<ClickbleItem 
 				v-for="(item, index) in menus"
 				:key="index"
