@@ -210,4 +210,47 @@ export const links = [
         link: 'https://facebook.com',
         icon: '/images/facebook.png'
     }
-]
+];
+
+export const some_of_clients = [
+    {
+        id: 1,
+        image_url: 'some-of-client/1.png'
+    },
+    {
+        id: 2,
+        image_url: 'some-of-client/1.png'
+    },
+    {
+        id: 3,
+        image_url: 'some-of-client/1.png'
+    },
+    {
+        id: 4,
+        image_url: 'some-of-client/1.png'
+    },
+    {
+        id: 5,
+        image_url: 'some-of-client/1.png'
+    },
+    {
+        id: 6,
+        image_url: 'some-of-client/1.png'
+    },
+    {
+        id: 7,
+        image_url: 'some-of-client/1.png'
+    },
+    {
+        id: 8,
+        image_url: 'some-of-client/1.png'
+    },
+    {
+        id: 9,
+        image_url: 'some-of-client/1.png'
+    },
+    {
+        id: 10,
+        image_url: 'some-of-client/1.png'
+    },
+];
