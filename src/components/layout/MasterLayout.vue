@@ -7,6 +7,7 @@
   <FooterTop class="hidden md:block lg:block xl:block"/>
   <FooterMiddle/>
   <FooterBottom/>
+  <FooterCopyWrite/>
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import HeaderBottom from "@/components/molecule/navigation/HeaderBottom";
 import FooterTop from '@/components/molecule/footer/FooterTop'
 import FooterMiddle from '@/components/molecule/footer/FooterMiddle'
 import FooterBottom from '@/components/molecule/footer/FooterBottom'
+import FooterCopyWrite from '@/components/molecule/footer/FooterCopyWrite'
 export default {
   components: {
     HeaderTop,
@@ -25,7 +27,8 @@ export default {
     HeaderBottom,
     FooterTop,
     FooterMiddle,
-    FooterBottom
+    FooterBottom,
+    FooterCopyWrite,
   },
 };
 </script>

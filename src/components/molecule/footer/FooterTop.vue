@@ -1,11 +1,12 @@
 <template>
-	<div class="container mx-auto bg-white py-2">
-		<div class="flex">
-			<ClickbleItem 
+	<div class="mx-auto bg-white py-2">
+		<div class="container flex">
+      <h4 class="uppercase pr-8">categories</h4>
+			<ClickbleItem
 				v-for="(item, index) in menus"
 				:key="index"
 				:text="item.name"
-				textStyle="text-gray-700 text-md hover:text-blue-400"
+				textStyle="text-gray-700 text-md hover:text-blue-400 border-r-2 px-2"
 				:icon="`mdi ${item.icon}`"
 				:iconStyle="`${item.color} pl-2`"
 			/>
