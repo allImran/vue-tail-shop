@@ -2,7 +2,7 @@
   <div class="container mx-auto">
     <div class="grid grid-cols-12 gap-2">
 
-      <div class="col-span-12 md:col-span-8">
+      <div class="col-span-12 md:col-span-9">
 
         <Slider
             :items="slides"
@@ -19,10 +19,10 @@
         </div>
       </div>
 
-      <div class="hidden md:block md:col-span-4">
+      <div class="hidden md:block md:col-span-3">
         <div class="flex flex-col">
-          <img class="mb-4 w-full object-fill" style="height: 255px;" src="/images/home_box_1.jpg" alt="">
-          <img class="w-full object-fill" style="height: 255px;" src="/images/home_box_1.jpg" alt="">
+          <img class="mb-4 w-full object-fill" style="height: 260px;" src="/images/sliders/box/1.png" alt="">
+          <img class="w-full object-fill" style="height: 260px;" src="/images/sliders/box/2.png" alt="">
         </div>
       </div>
 

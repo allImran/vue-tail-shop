@@ -13,27 +13,32 @@
             <div class="w-1/2">
 
               <TextWithIcon
-                  icon="mdi mdi-phone"
-                  iconStyle="text-gray-600 text-2xl"
-                  text="+990227 44488"
-                  textStyle="text-gray-700 text-sm"
-              />
-
-              <TextWithIcon
-                  icon="mdi mdi-message"
-                  iconStyle="text-gray-600 text-2xl"
-                  text="support@domain.com"
-                  textStyle="text-gray-700 text-sm"
-              />
-
-              <TextWithIcon
                   icon="mdi mdi-google-maps"
                   iconStyle="text-gray-600 text-2xl"
-                  text="Lorem ipsum dolor siectetur adipisicin"
-                  textStyle="text-gray-700 text-sm"
+                  text="house 1 road 16 block c, Central Building kafrul, dhaka 1216"
+                  textStyle="capitalize text-gray-700 text-xs sm:text-sm"
               />
 
+              <TextWithIcon
+                  icon="mdi mdi-headset"
+                  iconStyle="text-gray-600 text-2xl"
+                  text="+880 902 6599, +880 152136358"
+                  textStyle="text-gray-700 text-xs sm:text-sm"
+              />
 
+              <TextWithIcon
+                  icon="mdi mdi-email-outline"
+                  iconStyle="text-gray-600 text-2xl"
+                  text="contact@sysbuild.org"
+                  textStyle="text-gray-700 text-xs sm:text-sm"
+              />
+
+              <TextWithIcon
+                  icon="mdi mdi-clock"
+                  iconStyle="text-gray-600 text-2xl"
+                  text="open sat-thu (10.00 PM - 5PM)"
+                  textStyle="capitalize text-gray-700 text-xs sm:text-sm"
+              />
 
             </div>
 
@@ -47,22 +52,29 @@
           <TextWithIcon
 						icon="mdi mdi-google-maps"
 						iconStyle="text-gray-600 text-2xl"
-						text="Lorem ipsum dolor siectetur adipisicin"
-						textStyle="text-gray-700 text-md"
+						text="house 1 road 16 block c, Central Building kafrul, dhaka 1216"
+						textStyle="capitalize text-gray-700 text-md"
 					/>
 
           <TextWithIcon
-						icon="mdi mdi-phone"
+						icon="mdi mdi-headset"
 						iconStyle="text-gray-600 text-2xl"
-						text="+990227 44488"
+						text="+880 902 6599, +880 152136358"
 						textStyle="text-gray-700 text-md"
 					/>
 
           <TextWithIcon
 						icon="mdi mdi-email-outline"
 						iconStyle="text-gray-600 text-2xl"
-						text="support@domain.com"
+						text="contact@sysbuild.org"
 						textStyle="text-gray-700 text-md"
+					/>
+
+          <TextWithIcon
+						icon="mdi mdi-clock"
+						iconStyle="text-gray-600 text-2xl"
+						text="open sat-thu (10.00 PM - 5PM)"
+						textStyle="capitalize text-gray-700 text-md"
 					/>
 				</div>
 
@@ -70,10 +82,46 @@
 					<BorderedTitle
 						class="mb-5"
 					/>
+
 					<ClickbleItem
 						icon="mdi mdi-moon-full"
 						iconStyle="text-gray-600 text-xs"
-						text="Anything"
+						text="FAQs"
+						textStyle="text-gray-700 text-sm ml-2 hover:text-blue-400"
+					/>
+
+          <ClickbleItem
+						icon="mdi mdi-moon-full"
+						iconStyle="text-gray-600 text-xs"
+						text="Affiliates"
+						textStyle="text-gray-700 text-sm ml-2 hover:text-blue-400"
+					/>
+
+          <ClickbleItem
+						icon="mdi mdi-moon-full"
+						iconStyle="text-gray-600 text-xs"
+						text="Specs"
+						textStyle="text-gray-700 text-sm ml-2 hover:text-blue-400"
+					/>
+
+          <ClickbleItem
+						icon="mdi mdi-moon-full"
+						iconStyle="text-gray-600 text-xs"
+						text="Custom Link"
+						textStyle="text-gray-700 text-sm ml-2 hover:text-blue-400"
+					/>
+
+          <ClickbleItem
+						icon="mdi mdi-moon-full"
+						iconStyle="text-gray-600 text-xs"
+						text="Gift Offers"
+						textStyle="text-gray-700 text-sm ml-2 hover:text-blue-400"
+					/>
+
+          <ClickbleItem
+						icon="mdi mdi-moon-full"
+						iconStyle="text-gray-600 text-xs"
+						text="Support"
 						textStyle="text-gray-700 text-sm ml-2 hover:text-blue-400"
 					/>
 

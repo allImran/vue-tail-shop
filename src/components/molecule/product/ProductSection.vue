@@ -25,7 +25,7 @@
 
       <div class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 mt-6">
         <div v-for="(product, i) in products" :key="i">
-          <ProductCard :id="product.id" />
+          <ProductCard :url="product.image_url" :id="product.id" />
         </div>
       </div>
       <div class="grid grid-cols-1">

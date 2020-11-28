@@ -1,12 +1,12 @@
 <template>
-  <div class="slider">
+  <div class="slider border-2 border-gray-300	">
         <SliderItem
             v-for="(item, index) in items"
             :key="item.id"
             :index="index"
             :visibleSlide="visibleSlide"
             >
-              <img class="h-full" :src="item.path" />
+              <img class="w-full h-full" :src="item.path" />
         </SliderItem>
       <button v-show="nav" @click="next" class="next">Next</button>
       <button v-show="nav" @click="prev" class="prev">Prev</button>
