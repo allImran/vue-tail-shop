@@ -4,7 +4,7 @@
     <Card
         :key="index"
         v-for="(row, index) in some_of_clients"
-        image="/images/google.png"
+        :image="row.image_url"
         border="none"
     />
   </div>
