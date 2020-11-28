@@ -1,4 +1,3 @@
-
 <template>
 	<div class="container bg-white mx-auto shadow-md py-2 px-5 mb-5">
 		<div class="flex mb-10">
@@ -9,7 +8,10 @@
 				text="Shop by items"
 				textStyle="text-gray-700 font-bold text-xs sm:text-md truncate uppercase"
 			/>
-			<TopBar tabPosition="justify-end" tabMargin="ml-5"/>
+			<TopBar 
+				tabPosition="justify-end" 
+				tabMargin="ml-5"
+			/>
 		</div>
 
 		<div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-2">

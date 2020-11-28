@@ -6,9 +6,11 @@
         <div class="col-span-6 md:hidden sm:block">
           <div class="flex">
 
-            <div class="w-1/2 h-32 flex items-center">
-              <img src="/images/logo.png" alt="">
-            </div>
+			<div class="w-1/2 h-32 flex items-center">
+				<router-link to="/">
+					<img src="/images/logo.png" alt="">
+				</router-link>
+			</div>
 
             <div class="w-1/2">
 
@@ -33,8 +35,6 @@
                   textStyle="text-gray-700 text-sm"
               />
 
-
-
             </div>
 
           </div>
@@ -42,8 +42,9 @@
 
 
 				<div class="col-span-2 hidden md:block">
-					<img class="w-48 pb-5" src="/images/logo.png" alt="">
-
+					<router-link to="/">
+						<img class="w-48 pb-5" src="/images/logo.png" alt="">
+					</router-link>
           <TextWithIcon
 						icon="mdi mdi-google-maps"
 						iconStyle="text-gray-600 text-2xl"
@@ -71,6 +72,8 @@
 						class="mb-5"
 					/>
 					<ClickbleItem
+						v-for="(n, i) in 5"
+						:key="i"
 						icon="mdi mdi-moon-full"
 						iconStyle="text-gray-600 text-xs"
 						text="Anything"
@@ -80,8 +83,6 @@
 				</div>
 				
 			</div>
-
-
 			
 		</div>
 	</div>

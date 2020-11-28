@@ -191,4 +191,15 @@ export const links = [
         link: 'https://facebook.com',
         icon: '/images/facebook.png'
     }
-]
+];
+
+
+export const filterMenus = [
+    {
+      name: 'Popular',
+    }, {
+      name: 'New Arrival',
+    }, {
+      name: 'Featured',
+    },
+];

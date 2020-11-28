@@ -1,14 +1,16 @@
 <template>
-	<div class="container mx-auto bg-white py-2">
-		<div class="flex">
-			<ClickbleItem 
-				v-for="(item, index) in menus"
-				:key="index"
-				:text="item.name"
-				textStyle="text-gray-700 text-md hover:text-blue-400"
-				:icon="`mdi ${item.icon}`"
-				:iconStyle="`${item.color} pl-2`"
-			/>
+	<div class="bg-white">
+		<div class="container mx-auto bg-white py-2">
+			<div class="flex">
+				<ClickbleItem 
+					v-for="(item, index) in menus"
+					:key="index"
+					:text="item.name"
+					textStyle="text-gray-700 text-md hover:text-blue-400"
+					:icon="`mdi ${item.icon}`"
+					:iconStyle="`${item.color} pl-2`"
+				/>
+			</div>
 		</div>
 	</div>
 </template>
