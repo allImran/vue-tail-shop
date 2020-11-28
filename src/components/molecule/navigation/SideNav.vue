@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-green-700 items-center px-5 py-2 mb-3 justify-between">
+  <div class="flex  items-center px-5 py-2 mb-3 justify-between" :style="{backgroundColor:bgColor}">
 
     <span class="flex items-center">
     <span class="mdi mdi-chair-rolling text-3xl mr-2 text-gray-100"></span>
@@ -38,6 +38,11 @@
 <script>
 export default {
   name: 'SideNavbar',
+  props: {
+    bgColor: {
+      type: String
+    }
+  },
   data() {
     return {
       id: 'Asdipscing',

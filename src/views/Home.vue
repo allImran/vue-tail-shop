@@ -6,7 +6,9 @@
 			<TopBar tabPosition="justify-end" tabMargin="ml-5"/>
 		</template>
 	</BrandSection>
-	<ProductSection />
+	<ProductSection bg-color="#28CFBE" />
+	<ProductSection bg-color="#3D81E3"/>
+	<ProductSection bg-color="#FFAE00"/>
 </template>
 
 <script>

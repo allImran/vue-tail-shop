@@ -5,7 +5,7 @@
         v-for="(n, i) in 5"
         :key="i"
         title="Buet certified brand"
-        titleStyle="font-semibold text-sm text-gray-700 capitalize text-center"
+        titleStyle="font-semibold text-sm text-gray-700 capitalize text-center mt-4"
         border="border"
         subTitle="more detail will be here"
         subTitleStyle="text-xs sm:text-sm text-center"
