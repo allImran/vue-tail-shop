@@ -2,7 +2,7 @@
   <div class="container mx-auto bg-white shadow-md mb-5 pb-24 px-5 py-10">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10 px-5">
       <TextWithBgImage
-         title="Our Mission"
+          title="Our Mission"
           detail="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

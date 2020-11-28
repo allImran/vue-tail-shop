@@ -2,8 +2,10 @@
   <p class="uppercase font-bold text-gray-700 mb-5 mt-10">Certification, Authorization & Licences</p>
   <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-2 sm:gap-4 px-5">
     <Card
-        v-for="(n, i) in 5"
-        :key="i"
+        v-for="(row, index) in certificates"
+        :key="index"
+        :image="row.image_url"
+        imgStyle="h-40"
         title="Buet certified brand"
         titleStyle="font-semibold text-sm text-gray-700 capitalize text-center mt-4"
         border="border"
@@ -17,6 +19,7 @@
 
 <script>
 import Card from '@/components/atom/Card'
+import { certificates } from "@/data/certificate"
 
 export default {
   name: 'CertificateCardView',
@@ -27,7 +30,11 @@ export default {
   data() {
     return {}
   },
-  computed: {},
+  computed: {
+    certificates() {
+      return certificates.slice(0, 8);
+    }
+  },
   watch: {},
   methods: {}
 }
