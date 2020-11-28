@@ -46,7 +46,8 @@ export default {
   },
   data() {
     return {
-      visibleSlide: 0
+      visibleSlide: 0,
+      interval: null
     }
   },
   computed: {
@@ -72,7 +73,16 @@ export default {
         activeSlideItem(index) {
           this.visibleSlide = index;
         }
+    },
+    mounted() {
+      this.interval = setInterval(() => {
+        this.next()
+      }, 3000);
+    },
+    unmounted() {
+      clearInterval(this.interval);
     }
+    
 }
 </script>
 

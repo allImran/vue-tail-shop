@@ -30,7 +30,7 @@
 				type: Number
 			},
       url:{
-        type: Text
+        type: String
       },
 		}
 	}
