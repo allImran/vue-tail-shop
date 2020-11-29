@@ -3,7 +3,7 @@
   <div class="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-3 gap-4 px-3">
     <Card
         :key="index"
-        v-for="(row, index) in some_of_clients"
+        v-for="(row, index) in someOfClients"
         :image="row.image_url"
         border="none"
     />
@@ -12,7 +12,7 @@
 
 <script>
 import Card from '@/components/atom/Card'
-import {some_of_clients} from "@/data/products";
+import {someOfClients} from "@/data/products";
 
 export default {
   name: 'OurClient',
@@ -24,8 +24,8 @@ export default {
     return {}
   },
   computed: {
-    some_of_clients() {
-      return some_of_clients.slice(0, 8);
+    someOfClients() {
+      return someOfClients.slice(0, 8);
     }
   },
   watch: {},

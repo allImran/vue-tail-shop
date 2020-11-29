@@ -31,7 +31,7 @@ export default {
       default: "w-32",
     },
     title: {
-      default: "Defaule title",
+      default: "Default title",
     },
     titleStyle: {
       default: "text-gray-700 text-center w-full hover:text-blue-500",

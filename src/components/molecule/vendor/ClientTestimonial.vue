@@ -15,7 +15,7 @@
                 <p class="text-gray-800 uppercase font-bold">John doe</p>
                 <p class="text-sm text-gray-700">CEO, Thundeal Ltd</p>
             </div>
-            <p class="mt-5 text-gray-700 text-xs">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Alias dolor hic, officiis cum provident autem laborum vel deleniti id ipsa enim. Distinctio, officia. Soluta et obcaecati beatae dolor. Accusamus, nihil.</p>
+            <p class="mt-5 text-gray-700 text-xs italic">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Alias dolor hic, officiis cum provident autem laborum vel deleniti id ipsa enim. Distinctio, officia. Soluta et obcaecati beatae dolor. Accusamus, nihil.</p>
       </div>
     </div>
 </template>
