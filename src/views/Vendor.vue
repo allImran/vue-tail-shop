@@ -1,6 +1,6 @@
 <template>
 	<CoverDescriptionSection />
-	<ProductServiceSection />
+	<ProductServiceSection textTitle="products & services" />
 	<AboutUsSection />
 </template>
 

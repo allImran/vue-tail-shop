@@ -95,7 +95,7 @@
               v-for="(item, index) in products"
               :key="index"
             >
-              <ProductCard :id="item.id" />
+              <ProductCard :url="item.image_url" :id="item.id" />
             </div>
           </div>
           <!--end  product list   -->
