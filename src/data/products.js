@@ -212,7 +212,17 @@ export const links = [
     }
 ];
 
-export const someOfClients = [
+export const filterMenus = [
+    {
+      name: 'Popular',
+    }, {
+      name: 'New Arrival',
+    }, {
+      name: 'Featured',
+    }
+  ];
+
+export const some_of_clients = [
     {
         id: 1,
         image_url: '/images/some-of-client/1.png'

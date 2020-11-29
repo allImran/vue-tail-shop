@@ -50,7 +50,8 @@ export default {
   },
   data() {
     return {
-      visibleSlide: 0
+      visibleSlide: 0,
+      interval: null
     }
   },
   computed: {
@@ -58,25 +59,34 @@ export default {
       return this.items.length;
     }
   },
-  methods: {
-    next() {
-      if (this.visibleSlide >= this.slidesLen - 1) {
-        this.visibleSlide = 0;
-      } else {
-        this.visibleSlide++;
-      }
+    methods: {
+        next() {
+            if(this.visibleSlide >= this.slidesLen - 1) {
+                this.visibleSlide = 0;
+            }else {
+                this.visibleSlide++;
+            }
+        },
+        prev() {
+            if(this.visibleSlide <= 0) {
+                this.visibleSlide = this.slidesLen - 1;
+            }else {
+                this.visibleSlide--;
+            }
+        },
+        activeSlideItem(index) {
+          this.visibleSlide = index;
+        }
     },
-    prev() {
-      if (this.visibleSlide <= 0) {
-        this.visibleSlide = this.slidesLen - 1;
-      } else {
-        this.visibleSlide--;
-      }
+    mounted() {
+      this.interval = setInterval(() => {
+        this.next()
+      }, 3000);
     },
-    activeSlideItem(index) {
-      this.visibleSlide = index;
+    unmounted() {
+      clearInterval(this.interval);
     }
-  }
+}
 }
 </script>
 

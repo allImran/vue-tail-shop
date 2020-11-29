@@ -1,4 +1,5 @@
 <template>
+
   <div class=" bg-white py-2">
     <div class="container mx-auto flex">
       <h4 class="uppercase pr-8">categories</h4>
@@ -13,7 +14,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import ClickbleItem from "@/components/atom/ClickbleItem";
 export default {
