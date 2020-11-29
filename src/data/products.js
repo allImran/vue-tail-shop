@@ -212,6 +212,13 @@ export const links = [
     }
 ];
 
+export const filterMenus = [
+    {
+      name: 'Popular',
+    }, {
+      name: 'New Arrival',
+    }, {
+      name: 'Featured',
 export const some_of_clients = [
     {
         id: 1,
