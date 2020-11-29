@@ -8,6 +8,11 @@
 	</BrandSection>
 	<ProductSection bg-color="#28CFBE" />
 	<ProductSection bg-color="#3D81E3"/>
+
+  <div class="flex w-full container mx-auto mb-10 shadow-md">
+    <img class="w-full h-24" src="/images/add5.png" alt="" />
+  </div>
+
 	<ProductSection bg-color="#FFAE00"/>
 </template>
 
