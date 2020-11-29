@@ -1,14 +1,14 @@
 <template>
-  <div class="flex bg-blue-500 items-center px-5 py-2 mb-3 justify-between">
+  <div class="flex  items-center px-5 py-2 mb-3 justify-between" :style="{backgroundColor:bgColor}">
 
     <span class="flex items-center">
     <span class="mdi mdi-chair-rolling text-3xl mr-2 text-gray-100"></span>
-		<span class="uppercase text-sm font-semibold text-gray-100">Some Menu</span>
+		<span class="uppercase text-sm font-semibold text-gray-100">office supplier</span>
     </span>
 
     <div class="relative md:hidden sm:block">
       <select
-          class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-state">
         <option v-for="(row, index) in items_two" :key="index">{{ row.name }}</option>
       </select>
@@ -19,7 +19,6 @@
         </svg>
       </div>
     </div>
-
 
   </div>
 
@@ -39,6 +38,11 @@
 <script>
 export default {
   name: 'SideNavbar',
+  props: {
+    bgColor: {
+      type: String
+    }
+  },
   data() {
     return {
       id: 'Asdipscing',
