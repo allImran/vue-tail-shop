@@ -48,7 +48,7 @@
 		},
 		computed: {
 			products() {
-				return products.slice(0, 10);
+				return products.slice(0, 15);
 			}
 		}
 	}

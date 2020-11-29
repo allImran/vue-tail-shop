@@ -87,7 +87,6 @@ export default {
       clearInterval(this.interval);
     }
 }
-}
 </script>
 
 <style>

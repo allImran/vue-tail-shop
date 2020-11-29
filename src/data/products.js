@@ -222,7 +222,7 @@ export const filterMenus = [
     }
   ];
 
-export const some_of_clients = [
+export const someOfClients = [
     {
         id: 1,
         image_url: '/images/some-of-client/1.png'

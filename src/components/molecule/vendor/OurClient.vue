@@ -12,7 +12,7 @@
 
 <script>
 import Card from '@/components/atom/Card'
-import {someOfClients} from "@/data/products";
+import { someOfClients } from "@/data/products";
 
 export default {
   name: 'OurClient',
