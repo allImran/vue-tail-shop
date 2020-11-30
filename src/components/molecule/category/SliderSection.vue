@@ -4,7 +4,7 @@
 
       <div class="col-span-12 md:col-span-9">
 
-        <Slider :slider_border="border-0" style="height: 260px"
+        <Slider :sliderBorder="border-0" style="height: 260px"
             :items="slides"
             :dots="true"
         >

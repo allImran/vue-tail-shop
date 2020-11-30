@@ -1,7 +1,7 @@
 <template>
   <TopNavbarSection />
   <SliderSection class="mt-5"/>
-  <BrandSection/>
+  <BrandSection textTitle="shop by brands"/>
   <CategorySection/>
   <ProductByCategorySection/>
 </template>

@@ -4,7 +4,7 @@
 			icon="mdi mdi-apps"
 			iconStyle="text-pink-600 text-xl"
 			text="shop by categories"
-			textStyle="text-gray-700 text-md truncate uppercase font-bold"
+			textStyle="text-gray-700 text-xs truncate uppercase font-bold"
 		/>
 		<div class="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-2">
 			<div

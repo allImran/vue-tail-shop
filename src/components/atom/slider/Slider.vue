@@ -1,5 +1,5 @@
 <template>
-  <div class="slider border-gray-300" :class="slider_border">
+  <div class="slider border-gray-300" :class="sliderBorder">
     <SliderItem
         v-for="(item, index) in items"
         :key="item.id"
@@ -44,7 +44,7 @@ export default {
       type: Boolean,
       default: () => false
     },
-    slider_border:{
+    sliderBorder:{
       default:'border-2'
     }
   },

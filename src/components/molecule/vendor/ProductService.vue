@@ -5,7 +5,7 @@
 				class="mt-3"
 				icon=""
 				iconStyle="text-pink-600 text-xl"
-				text="Shop by items"
+				:text="textTitle"
 				textStyle="text-gray-700 mr-3 font-bold text-md truncate uppercase"
 			/>
 			<TopBar  tabMargin="mr-5"/>
@@ -55,6 +55,12 @@
 	import { products } from "@/data/products"
 	export default{
 		name: 'ProductByCategory',
+
+    props:{
+      textTitle: {
+        default : 'Shop by items',
+      }
+    },
 		components: {
 			TextWithIcon,
 			TopBar,
