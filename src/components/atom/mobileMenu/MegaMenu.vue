@@ -1,6 +1,6 @@
 <template>
-  <div class="relative top-arrow">
-    <div class="w-full bg-gray-200 p-4 h-screen">
+  <div class="relative right-arrow">
+    <div class="w-1/2 bg-indigo-200 p-4 h-screen">
       <ul>
 
         <mega-menu-title v-for="(row,index) in headerBottom" :key="index" :title="row.title" :items="row.items" />

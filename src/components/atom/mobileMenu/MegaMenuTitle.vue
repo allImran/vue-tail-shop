@@ -9,7 +9,7 @@
       </svg>
     </div>
 
-    <ul :class="this.class" class="ml-4 overflow-hidden dropdown-menu font-normal">
+    <ul :class="menuHeight" class="ml-4 overflow-hidden dropdown-menu font-normal">
       <li v-for="(row,index) in items" :key="index">{{ row.title }}</li>
     </ul>
   </li>
@@ -41,7 +41,7 @@ export default {
   },
 
   computed: {
-    class() {
+    menuHeight() {
       return this.showMenu ? 'h-full' : "h-0";
     }
   }

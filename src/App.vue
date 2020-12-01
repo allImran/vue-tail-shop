@@ -18,3 +18,4 @@
 </script>
 
 <style src="./assets/style/app.css" />
+<style src="./assets/style/style.css" />
