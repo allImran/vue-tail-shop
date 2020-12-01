@@ -6,7 +6,7 @@
 		name: 'BorderedTitle',
 		props: {
 			title: {
-				default: 'This is a Title'
+				default: 'My Account'
 			},
 			titleStyle: {
 				default: 'text-md font-semibold uppercase text-gray-600'

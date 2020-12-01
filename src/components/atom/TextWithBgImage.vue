@@ -6,7 +6,7 @@
         >
           <p class="text-2xl text-gray-100 uppercase font-semibold pl-10">{{ title }}</p>
       </div>
-      <p class="mt-2 text-gray-700 text-sm">{{ detail }}</p>
+      <p class="mt-5 text-gray-700 text-sm">{{ detail }}</p>
     </div>
 </template>
 

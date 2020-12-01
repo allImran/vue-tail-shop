@@ -3,7 +3,7 @@
 	<div class="container mx-auto">
 		<div class="flex justify-start flex-wrap">
 			<router-link
-				class="font-semibold text-sm hover:text-purple-800 pr-5 mb-3"
+				class="text-sm hover:text-purple-800 pr-5 mb-3"
 				v-for="n in 19"
 				:key="n"
 				to="/category">{{ link() }}

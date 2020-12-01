@@ -2,41 +2,37 @@
   <p class="text-gray-700 text-xl font-bold mt-5 mb-3 capitalize">some of our client</p>
   <div class="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-3 gap-4 px-3">
     <Card
-        :key="i"
-        v-for="(n, i) in 9"
-        image="/images/google.png"
+        :key="index"
+        v-for="(row, index) in someOfClients"
+        :image="row.image_url"
         border="none"
     />
   </div>
 </template>
 
 <script>
-    import Card from '@/components/atom/Card'
-  export default {
-    name: 'OurClient',
-    components:{
-        Card
-    },
-    props:{
+import Card from '@/components/atom/Card'
+import { someOfClients } from "@/data/products";
 
-    },
-    data(){
-      return{
-
-      }
-    },
-    computed:{
-
-    },
-    watch:{
-
-    },
-    methods:{
-
+export default {
+  name: 'OurClient',
+  components: {
+    Card
+  },
+  props: {},
+  data() {
+    return {}
+  },
+  computed: {
+    someOfClients() {
+      return someOfClients.slice(0, 8);
     }
-  }
+  },
+  watch: {},
+  methods: {}
+}
 </script>
 
 <style>
-  
+
 </style>

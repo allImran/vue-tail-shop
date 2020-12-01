@@ -4,15 +4,18 @@
 			icon="mdi mdi-apps"
 			iconStyle="text-pink-600 text-xl"
 			text="shop by categories"
-			textStyle="text-gray-700 text-md truncate uppercase font-bold"
+			textStyle="text-gray-700 text-xs truncate uppercase font-bold"
 		/>
 		<div class="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-2">
 			<div
-				v-for="(item, index) in products"
+				v-for="(item, index) in aboutShops"
 				:key="index"
 			>
 				<card
-				:title="item.vendor"
+				:title="item.title"
+        titleStyle="capitalize text-gray-700 text-center w-full hover:text-blue-500"
+        :image="item.image_url"
+        imgStyle="h-24"
 			/>
 			</div>
 		</div>
@@ -20,7 +23,7 @@
 </template>
 
 <script>
-	import { products } from "@/data/products"
+	import { aboutShops } from "@/data/aboutCategories"
 	import Card from "@/components/atom/Card"
 	import TextWithIcon from "@/components/atom/TextWithIcon"
 	export default{
@@ -30,8 +33,8 @@
 			Card
 		},
 		computed: {
-			products() {
-				return products.slice(0, 18);
+      aboutShops() {
+				return aboutShops.slice(0, 18);
 			}
 		}
 

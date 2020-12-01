@@ -1,31 +1,26 @@
 <template>
-	<div
-    class="flex w-full container mx-auto mb-10 shadow-md"
-    v-for="i in 3"
-    :key="i"
-  >
-    <div class="w-1/5 hidden md:block lg:block xl:block">
-      <SideNav />
+  <div class="flex w-full container mx-auto mb-10 shadow-md">
+    <div
+      class="w-1/5 hidden md:block lg:block xl:block"
+      :style="{ backgroundColor: adjust(bgColor, 50) }"
+    >
+      <SideNav :bg-color="bgColor" />
     </div>
-
     <div class="sm:w-full md:w-4/5 lg:w-4/5 xl:w-4/5 bg-white px-6 py-4">
-
-
       <div class="md:hidden">
-        <SideNav />
+        <SideNav :bg-color="bgColor" />
       </div>
-
-      <TopBar
-        tabPosition="justify-start" class="hidden md:block"
-      >
+      <TopBar tabPosition="justify-start" class="hidden md:block">
         <template v-slot:nav>
-          <NextPrev class="relative" @next="onNext" @prev="onPrev"/>
+          <NextPrev class="relative" @next="onNext" @prev="onPrev" />
         </template>
       </TopBar>
 
-      <div class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 mt-6">
+      <div
+        class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 mt-6"
+      >
         <div v-for="(product, i) in products" :key="i">
-          <ProductCard :id="product.id" />
+          <ProductCard :url="product.image_url" :id="product.id" />
         </div>
       </div>
       <div class="grid grid-cols-1">
@@ -38,9 +33,9 @@
 <script>
 import SideNav from "@/components/molecule/navigation/SideNav.vue";
 import TopBar from "@/components/molecule/navigation/TopBar.vue";
-import NextPrev from "@/components/atom/NextPrev"
+import NextPrev from "@/components/atom/NextPrev";
 import ProductCard from "@/components/molecule/product/ProductCard.vue";
-import { products } from "@/data/products"
+import { products } from "@/data/products";
 export default {
   name: "ProductSection",
   components: {
@@ -49,33 +44,43 @@ export default {
     NextPrev,
     ProductCard,
   },
+  props: {
+    bgColor: {
+      type: String,
+    },
+  },
   data() {
     return {
       start: 0,
-      end: 8
-    }
+      end: 8,
+    };
   },
   computed: {
     products() {
       return products.slice(this.start, this.end);
-    }
+    },
   },
   methods: {
     onNext() {
-      if(this.end < products.length) {
+      if (this.end < products.length) {
         this.start = this.end;
         this.end = this.end + 8;
       }
-      
     },
-    
+
     onPrev() {
-      if(this.start > 0) {
+      if (this.start > 0) {
         this.end = this.start;
         this.start = this.start - 8;
       }
     },
-
-  }
+    adjust(color) {
+      return `rgba(${color.replace(/^#/, "").replace(/../g, (color) =>
+        Math.min(255, Math.max(0, parseInt(color, 16)))
+          .toString()
+          .concat(",")
+      )}0.05)`;
+    },
+  },
 };
 </script>

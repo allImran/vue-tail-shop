@@ -5,8 +5,8 @@
           class="mt-3"
           icon="mdi mdi-check-decagram"
           iconStyle="text-pink-600 text-xl"
-          text="Featured Brands"
-          textStyle="text-gray-700 text-md truncate"
+          :text="textTitle"
+          :textStyle="textStyle"
       />
       <slot name="topbar"></slot>
     </div>
@@ -26,6 +26,14 @@ import TextWithIcon from "@/components/atom/TextWithIcon"
 
 export default {
   name: 'BrandList',
+  props:{
+    textTitle:{
+      default:'Featured Brands'
+    },
+    textStyle:{
+      default: 'uppercase text-gray-700 text-xs truncate'
+    }
+  },
   components: {
     TextWithIcon
   }

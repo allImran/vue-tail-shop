@@ -20,9 +20,16 @@
 				v-for="(item, index) in products"
 				:key="index"
 			>
-				<ProductCard :id="item.id" />
+				<ProductCard :id="item.id" :url="item.image_url" />
 			</div>
 		</div>
+
+    <div class="flex mb-10 justify-center">
+      <button
+          class="bg-white border-2 text-gray-600 focus:outline-none px-8 h-10 border-t-3">
+        See More
+      </button>
+    </div>
 
 	</div>
 </template>
@@ -41,7 +48,7 @@
 		},
 		computed: {
 			products() {
-				return products.slice(0, 8);
+				return products.slice(0, 15);
 			}
 		}
 	}
