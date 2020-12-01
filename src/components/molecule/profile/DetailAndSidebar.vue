@@ -7,6 +7,7 @@
                 />
 
                 <About />
+                <Skill />
                 <Certificate />
                 <Experience />
                 <Education />
@@ -23,6 +24,7 @@
 <script>
     import TopBar from '@/components/molecule/navigation/TopBar'
     import About from '@/components/molecule/profile/About'
+    import Skill from '@/components/molecule/profile/Skill'
     import Certificate from '@/components/molecule/profile/Certificate'
     import Experience from '@/components/molecule/profile/Experience'
     import Education from '@/components/molecule/profile/Education'
@@ -32,6 +34,7 @@
     components:{
         TopBar,
         About,
+        Skill,
         Sidebar,
         Certificate,
         Experience,
