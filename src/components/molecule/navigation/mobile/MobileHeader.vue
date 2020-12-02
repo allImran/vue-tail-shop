@@ -22,11 +22,13 @@
           <span class="mdi mdi-magnify text-md sm:text-3xl text-white"></span>
         </div>
 
-        <div class="col-span-1 sm:col-span-1 py-2 cursor-pointer" @click="open = !open">
+        <div class="col-span-1 sm:col-span-1"></div>
+
+        <div class="col-span-1 sm:col-span-1 py-2 cursor-pointer border-r-2 border-gray-800" @click="open = !open">
           <span class="mdi mdi-apps text-md sm:text-3xl text-white"></span>
         </div>
 
-        <div class="col-span-1 sm:col-span-1"></div>
+
 
         <div class="col-span-1 sm:col-span-1 py-2 border-r-2 border-gray-800">
           <router-link class="flex items-center text-white" to="#">
