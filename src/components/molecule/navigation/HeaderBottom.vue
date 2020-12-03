@@ -6,7 +6,7 @@
             class="text-sm hover:text-purple-800 pr-5 mb-3"
             v-for="(row,index) in headerBottom"
             :key="index"
-            :to="row.slug">{{ row.title }}
+            :to="`/category/${row.slug}`">{{ row.title }}
         </router-link>
 
       </div>

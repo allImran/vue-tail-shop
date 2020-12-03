@@ -10,12 +10,13 @@
       />
       <slot name="topbar"></slot>
     </div>
-    <div class="flex flex-wrap justify-center px-5">
+
+    <div class="flex flex-wrap justify-center">
       <div
-          v-for="n in 12"
-          :key="n"
+          v-for="(row,index) in items"
+          :key="index"
           class="xl:w-1/6 md:w-1/6 w-1/4">
-        <img class="w-full" src="/images/brand.png" alt="">
+        <img :class="imageStyle" :src="row.image_url" alt="">
       </div>
     </div>
   </div>
@@ -32,7 +33,19 @@ export default {
     },
     textStyle:{
       default: 'uppercase text-gray-700 text-xs truncate'
-    }
+    },
+    imageStyle:{
+      default:'w-full'
+    },
+    items: {
+      default: [
+
+        {id: 1, image_url: '/images/band/1.png'},
+        {id: 2, image_url: '/images/band/2.png'},
+        {id: 3, image_url: '/images/band/3.png'},
+
+      ]
+    },
   },
   components: {
     TextWithIcon

@@ -19,12 +19,12 @@ const routes = [
     meta: { layout: 'auth' }
   },
   {
-    path: '/category',
+    path: '/category/:slug',
     name: 'Category',
     component: () => import('../views/Category.vue'),
   },
   {
-    path: '/subcategory',
+    path: '/subcategory/:slug',
     name: 'Subcategory',
     component: () => import('../views/SubCategory.vue'),
   },

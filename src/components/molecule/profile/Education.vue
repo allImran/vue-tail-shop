@@ -9,7 +9,7 @@
     <div class="px-5 mt-5 pb-10 border-b">
       <div class="flex flex-wrap">
         <div
-            v-for="(n, i) in 6"
+            v-for="(n, i) in 3"
             :key="i"
             class="mr-5 mb-4"
         >

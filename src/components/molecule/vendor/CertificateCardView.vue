@@ -5,13 +5,13 @@
         v-for="(row, index) in certificates"
         :key="index"
         :image="row.image_url"
-        imgStyle="h-40"
+        imgStyle="h-32"
         title="Buet certified brand"
         titleStyle="font-semibold text-sm text-gray-700 capitalize text-center mt-4"
-        border="border"
+        border="border-0"
         subTitle="more detail will be here"
         subTitleStyle="text-xs sm:text-sm text-center"
-        detailStyle="text-xs sm:text-sm text-center"
+        detailStyle="text-xs text-center"
         detail="Lorem ipsum dolor sit amet, consectetur adipisicin sed do eiusmod tempor ncididunt"
     />
   </div>
@@ -32,7 +32,7 @@ export default {
   },
   computed: {
     certificates() {
-      return certificates.slice(0, 8);
+      return certificates.slice(0, 5);
     }
   },
   watch: {},

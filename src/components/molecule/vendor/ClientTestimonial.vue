@@ -2,7 +2,7 @@
     <slot name="top"></slot>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-3">
       <div
-        v-for="(n, i) in 4"
+        v-for="(n, i) in 3"
         :key="i"
         class="flex p-3 h-48 mb-10 relative border border-solid border-gray-300 flex-col items-center"
         >

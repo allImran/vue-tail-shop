@@ -7,9 +7,10 @@
         v-for="(item, index) in headerBottom"
         :key="index"
         :text="item.title"
-        textStyle="text-gray-700 text-md hover:text-blue-400 border-r-2 px-2"
+        textStyle="text-gray-700 text-md hover:text-blue-400 border-r-2 px-4"
         :icon="`mdi ${item.icon}`"
         :iconStyle="`${item.color} pl-2`"
+        :link="`/category/${item.slug}`"
       />
     </div>
   </div>
@@ -29,7 +30,7 @@ export default {
   },
   computed: {
     headerBottom() {
-      return headerBottom.slice(0,10);
+      return headerBottom.slice(0,8);
     }
   },
 };
