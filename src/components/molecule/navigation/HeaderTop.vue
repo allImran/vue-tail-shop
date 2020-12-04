@@ -1,7 +1,5 @@
 <template>
-  <div
-      class="py-1 text-sm marquee"
-  >
+  <div class="text-xs marquee">
     <p class="truncate">
       <a class="mr-5" href="">**Sign up: Register to get the best offer</a>
       <a class="mr-5" href="">**Sign up: Register to get the best offer</a>
@@ -18,12 +16,13 @@ export default {
 <style>
 .marquee {
   overflow: hidden;
+  padding: .1rem;
 }
 
 .marquee p {
   display: inline-block;
   padding-left: 100%;
-  animation: marquee 15s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 
 @keyframes marquee {

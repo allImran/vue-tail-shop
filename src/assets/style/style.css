@@ -1,0 +1,99 @@
+/*mobile doyar animation start*/
+.mobileSlide-enter-active {
+    animation: mobileSlideInAnimation 0.3s ease-in-out;
+}
+
+.mobileSlide-leave-active {
+    animation: mobileSlideOutAnimation 0.3s ease-in-out;
+}
+
+@keyframes mobileSlideInAnimation {
+    from {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mobileSlideOutAnimation {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+}
+
+/*mobile doyar animation end*/
+
+
+/*mobile Search animation start*/
+.mobileSearch-enter-active {
+    animation: mobileSearchInAnimation 0.3s ease-in-out;
+}
+
+.mobileSearch-leave-active {
+    animation: mobileSearchOutAnimation 0.3s ease-in-out;
+}
+
+@keyframes mobileSearchInAnimation {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mobileSearchOutAnimation {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+}
+
+/*mobile Search animation end*/
+
+/*mobile profile animation start*/
+.mobileProfile-enter-active {
+    animation: mobileProfileInAnimation 0.3s ease-in-out;
+}
+
+.mobileProfile-leave-active {
+    animation: mobileProfileOutAnimation 0.3s ease-in-out;
+}
+
+@keyframes mobileProfileInAnimation {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mobileProfileOutAnimation {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+}
+
+/*mobile doyar animation end*/

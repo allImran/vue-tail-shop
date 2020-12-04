@@ -25,7 +25,7 @@ export default {
   },
   computed: {
     someOfClients() {
-      return someOfClients.slice(0, 8);
+      return someOfClients.slice(0, 6);
     }
   },
   watch: {},
