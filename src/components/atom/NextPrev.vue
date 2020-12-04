@@ -1,6 +1,6 @@
 <template>
 	<div class="flex">
-			<div class="flex absolute right-0" style="top:-28px;">
+			<div :class="`${customeClass}`" style="top:-28px;">
 				<button @click="$emit('prev')" class="focus:outline-none">
 
 					<span class="mdi mdi-chevron-left rounded-l border text-lg"></span>
@@ -15,5 +15,10 @@
 <script>
 	export default{
 		name: 'NextPrev',
+		props: {
+			customeClass:{
+				default: 'flex absolute right-0'
+			}
+		}
 	}
 </script>
