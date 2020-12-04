@@ -27,7 +27,7 @@
           <div class="wrapper border rounded px-3">
 
             <!-- price Range -->
-            <div class="border-b">
+            <!-- <div class="border-b">
               <div class=" px-3 py-1">
                 <p class="uppercase text-gray-700 font-semibold text-sm">
                   Price Range
@@ -37,7 +37,7 @@
                     class="mt-5 mb-3"
                 />
               </div>
-            </div>
+            </div> -->
 
             <!-- Product Filter -->
             <div class="border-b mt-5">
@@ -114,7 +114,6 @@
 import { products } from "@/data/products"
 import ProductCard from "@/components/molecule/product/ProductCard.vue";
 import {filterMenus} from '@/data/products.js'
-import RangeSlider from '@/components/atom/RangeSlider'
 import ProductType from '@/components/molecule/subcategory/ProductType'
 import BrandFilter from '@/components/molecule/subcategory/BrandsFilter'
 import Dropdown from '@/components/atom/Dropdown'
@@ -124,7 +123,6 @@ import Add from '@/components/atom/Add'
 export default {
   name: 'FilterAndProduct',
   components: {
-    RangeSlider,
     Search,
     ProductType,
     BrandFilter,
