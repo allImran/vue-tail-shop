@@ -17,15 +17,17 @@
                style="padding: 8px">
             <input placeholder="Search product by title, brand, materials, supplies, category, etc..."
                    class="hover:bg-white focus:border-blue-400 focus:outline-none w-full" type="text">
+
             <span class="mdi text-xl mdi-magnify bg-blue-400 rounded absolute cursor-pointer"
                   style="color: #fff; padding: 1px 4px; top: 3px; right: 4px"></span>
           </div>
         </div>
 
         <div class="col-span-3 md:ml-4 xl:mt-1">
-          <div class="flex justify-between">
+          <div class="flex justify-end space-x-3">
+
             <div class="relative mt-2">
-              <button @click="open = !open" class="flex items-center text-gray-700" to="#">
+              <button @click="open = !open" class="flex items-center text-gray-700">
                 <img width="30" src="/images/icons/circled_menu.svg" alt="">
               </button>
 
@@ -35,12 +37,12 @@
             </div>
 
 
-            <router-link class="flex w-10 items-center text-gray-700 " to="#">
+            <router-link class="flex w-10 items-center text-gray-700" style="padding-right: 3.5rem" to="#">
               <span class="mdi text-3xl mdi-cart"></span>
               <span class="text-xs">Place Req</span>
             </router-link>
 
-            <router-link class="flex w-10 items-center text-gray-700" to="#">
+            <router-link class="flex w-10 items-center text-gray-700" style="padding-right: 3.5rem" to="#">
               <span class="mdi text-3xl mdi-view-list"></span>
               <span class="text-xs">Rep List</span>
             </router-link>
@@ -54,7 +56,7 @@
 
       </div>
       <transition name="slide">
-        <div v-show="toogle" class="absolute x-10 inset-x-0 transform shadow-lg" style="top: 80px">
+        <div v-show="toogle" class="absolute x-10 inset-x-0 transform shadow-lg z-10" style="top: 80px">
           <MegaMenu />
         </div>
       </transition>

@@ -12,7 +12,7 @@
 
         <div class="flex justify-between">
 
-          <img class="hidden md:block  w-1/4 mt-5 object-fill" src="/images/add.jpg" alt="" />
+          <img class="hidden md:block  w-1/4 mt-5 object-fill h-16" src="/images/sliders/box/add_one.png" alt="" />
 
           <img class="hidden md:block  w-3/4	pl-2 mt-5 object-fill" src="/images/add.jpg" alt="" />
 
@@ -21,8 +21,8 @@
 
       <div class="hidden md:block md:col-span-3">
         <div class="flex flex-col">
-          <img class="mb-4 w-full object-fill" style="height: 260px;" src="/images/sliders/box/1.png" alt="">
-          <img class="w-full object-fill" style="height: 260px;" src="/images/sliders/box/2.png" alt="">
+          <img class="mb-4 w-full object-fill" style="height: 235px;" src="/images/sliders/box/1.png" alt="">
+          <img class="w-full object-fill" style="height: 235px;" src="/images/sliders/box/2.png" alt="">
         </div>
       </div>
 

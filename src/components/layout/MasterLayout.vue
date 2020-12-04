@@ -13,7 +13,7 @@
 <script>
 import HeaderTop from "@/components/molecule/navigation/HeaderTop";
 import Header from "@/components/molecule/navigation/Header";
-import MobileHeader from "@/components/molecule/navigation/MobileHeader";
+import MobileHeader from "@/components/molecule/navigation/mobile/MobileHeader";
 import HeaderBottom from "@/components/molecule/navigation/HeaderBottom";
 import FooterTop from '@/components/molecule/footer/FooterTop'
 import FooterMiddle from '@/components/molecule/footer/FooterMiddle'

@@ -1,16 +1,24 @@
 <template>
   <div class="product-card">
-    <router-link to="/anyting">
-      <div
-        class="product-card__image-area"
-        :style="{ backgroundImage: `url('/images/product/${url}')` }"
-        style="background-size: 100% 100%"
-      >
-        <!--		<div class="product-card__image-area" style="background-image: url('/images/p1.png');background-size: 100% 100%">-->
+    <router-link to="/">
+
+      <!--      <div
+              class="product-card__image-area"
+              :style="{ backgroundImage: `url('/images/product/${url}')` }"
+              style="background-size: 100% 100%"
+            >-->
+
+      <div class="product-card__image-area">
+
+        <div class="relative" style="padding-bottom: 50%">
+          <img class="absolute top-0 h-full w-full object-cover" :src="`/images/product/${url}`" alt="">
+        </div>
+
+
 
         <div
-          class="product-card__cart-icon simptip-position-bottom simptip-fade"
-          data-tooltip="I'm a tooltip with fade effect"
+            class="product-card__cart-icon simptip-position-bottom simptip-fade"
+            data-tooltip="I'm a tooltip with fade effect"
         >
           <span class="mdi mdi-cart text-gray-100"></span>
           <!-- <span class="product-card__hints">Place requirement</span> -->
@@ -19,6 +27,7 @@
           #partext ltd
         </div>
       </div>
+
       <p class="font-medium text-xs text-gray-800">
         {{ id }} Lorem ipsum dolo consectetur adipisici explicabo!
       </p>
@@ -48,17 +57,19 @@ export default {
 .product-card {
   cursor: pointer;
 }
+
 .product-card:hover .product-card__brand-name {
   bottom: 0;
 }
+
 .product-card__image-area {
   width: 100%;
-  height: 156px;
+  /*height: 156px;*/
   overflow: hidden;
   position: relative;
   border-radius: 5px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
 }
 
 .product-card__cart-icon {
@@ -80,6 +91,7 @@ export default {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
+
 .product-card__brand-name {
   left: 0;
   width: 100%;
@@ -91,9 +103,9 @@ export default {
   transition-delay: 0.2s;
   transition: 0.3s bottom;
   background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0),
-    rgba(0, 0, 0, 1)
+      to right,
+      rgba(255, 0, 0, 0),
+      rgba(0, 0, 0, 1)
   );
 }
 </style>
