@@ -21,8 +21,8 @@
 
       <div class="hidden md:block md:col-span-3">
         <div class="flex flex-col">
-          <img class="mb-4 w-full object-fill" style="height: 260px;" src="/images/sliders/box/1.png" alt="">
-          <img class="w-full object-fill" style="height: 260px;" src="/images/sliders/box/2.png" alt="">
+          <img class="mb-4 w-full object-fill" style="height: 235px;" src="/images/sliders/box/1.png" alt="">
+          <img class="w-full object-fill" style="height: 235px;" src="/images/sliders/box/2.png" alt="">
         </div>
       </div>
 
