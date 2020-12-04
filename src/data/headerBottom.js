@@ -95,6 +95,8 @@ export const headerBottom = [
         id: 5,
         title: 'Security',
         slug:'security',
+        icon: "mdi-weight",
+        color: "text-black-500",
         items: [
             {
                 id: 1,
@@ -215,6 +217,8 @@ export const headerBottom = [
         id: 11,
         title: 'Security',
         slug: 'security-11',
+        icon: "mdi-weight",
+        color: "text-black-500",
         items: [
             {
                 id: 1,

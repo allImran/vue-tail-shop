@@ -3,10 +3,12 @@
     <div class="container mx-auto">
       <div class="flex justify-start flex-wrap">
         <router-link
-            class="text-sm hover:text-purple-800 pr-5 mb-3"
             v-for="(row,index) in headerBottom"
+            :class="`text-sm  hover:text-purple-900 pr-5 mb-3 ${/category/+ row.slug == $route.path ? 'text-purple-900 font-medium' : ''}`"
             :key="index"
-            :to="`/category/${row.slug}`">{{ row.title }}
+            :to="`/category/${row.slug}`">
+          <span :class="`mdi ${row.icon} ${row.color}`"></span>
+          {{ row.title }}
         </router-link>
 
       </div>

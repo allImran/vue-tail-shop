@@ -12,7 +12,7 @@
 
         <div class="flex justify-between">
 
-          <img class="hidden md:block  w-1/4 mt-5 object-fill" src="/images/add.jpg" alt="" />
+          <img class="hidden md:block  w-1/4 mt-5 object-fill h-16" src="/images/sliders/box/add_one.png" alt="" />
 
           <img class="hidden md:block  w-3/4	pl-2 mt-5 object-fill" src="/images/add.jpg" alt="" />
 

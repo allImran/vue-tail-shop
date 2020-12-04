@@ -3,7 +3,7 @@
       v-for="(item, index) in tabs"
       :key="index"
       :to="`/subcategory/${item.slug}`"
-      :class="`${tabStyle} hover:text-gray-100`"
+      :class="`${tabStyle} hover:text-gray-100 ${/subcategory/+ item.slug == $route.path ? 'text-purple-100 font-medium' : 'text-gray-400'}`"
   >
     {{ item.title }}
   </router-link>

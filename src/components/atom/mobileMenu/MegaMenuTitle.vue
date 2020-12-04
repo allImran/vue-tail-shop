@@ -10,7 +10,13 @@
     </div>
 
     <ul :class="menuHeight" class="ml-4 overflow-hidden dropdown-menu font-normal">
-      <li v-for="(row,index) in items" :key="index">{{ row.title }}</li>
+
+      <li v-for="(row,index) in items" :key="index">
+        <router-link :to="`/subcategory/${row.slug}`">
+          {{ row.title }}
+        </router-link>
+      </li>
+
     </ul>
   </li>
 </template>
@@ -20,17 +26,17 @@ export default {
   name: "MegaMenuTitle",
   props: {
     title: {
-      default:'Main menu'
+      default: 'Main menu'
     },
-    items:{
-      type:Array
+    items: {
+      type: Array
     }
 
   },
   data() {
     return {
       showMenu: false,
-      lmn:'h-full'
+      lmn: 'h-full'
     };
   },
 
