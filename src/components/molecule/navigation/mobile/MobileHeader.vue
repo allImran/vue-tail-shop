@@ -12,7 +12,7 @@
         <div class="col-span-3 sm:col-span-3 py-2 border-r-2 border-gray-800">
           <div class="flex items-center">
             <router-link to="/">
-              <img src="/images/logo.png" alt="">
+              <img class="w-4/5 sm:w-full" src="/images/logo.png" alt="">
             </router-link>
           </div>
 
@@ -27,8 +27,6 @@
         <div class="col-span-1 sm:col-span-1 py-2 cursor-pointer border-r-2 border-gray-800" @click="open = !open">
           <span class="mdi mdi-apps text-md sm:text-3xl text-white"></span>
         </div>
-
-
 
         <div class="col-span-1 sm:col-span-1 py-2 border-r-2 border-gray-800">
           <router-link class="flex items-center text-white" to="#">
@@ -56,7 +54,7 @@
       </div>
 
       <transition name="mobileSlide">
-        <div v-show="toogle" class="absolute x-10 inset-x-0 transform  z-10" style="top: 98px">
+        <div v-show="toogle" class="absolute x-10 inset-x-0 transform  z-10 mega-menu-top">
           <MegaMenu/>
         </div>
       </transition>
@@ -68,7 +66,7 @@
       </transition>
 
       <transition name="mobileSearch">
-        <div v-show="searchToogle" class="absolute x-10 inset-x-0 transform  z-10" style="top: 98px">
+        <div v-show="searchToogle" class="absolute x-10 inset-x-0 transform  z-10 mega-menu-top">
           <SearchBox/>
         </div>
       </transition>
@@ -111,5 +109,18 @@ export default {
 
 
 <style scoped>
+@media (min-width: 650px) and (max-width: 767px){
+  .mega-menu-top
+  {
+    top:88px;
+  }
 
+}
+
+@media (min-width: 450px) and (max-width: 649px) {
+  .mega-menu-top
+  {
+    top:72px;
+  }
+}
 </style>
