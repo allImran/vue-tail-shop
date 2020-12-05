@@ -1,7 +1,9 @@
 <template>
     <div class="slide">
-        <!-- <img class="slide-image" :src="slide" alt=""> -->
-        <GradientCard class="mx-2" />
+        <GradientCard 
+            class="mx-2"
+            :image="slide"
+        />
     </div>
 </template>
 

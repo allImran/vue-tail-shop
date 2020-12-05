@@ -1,9 +1,11 @@
 <template>
-    <div class="slides">
-        <div ref="wrapper" class="flex justify-between mb-3">
+    <div class="slides mx-5 border-b pb-5">
+        <div ref="slider_wrapper" class="flex justify-between mb-3">
             <TextWithIcon 
-                icon="mdi mdi-home"
-                text="Our Project"
+				text="Education"
+				textStyle="capitalize text-lg text-blue-600 font-semibold"
+				icon="mdi mdi-account"
+				iconStyle=" text-xl text-blue-600"
             />
             <NextPrev
                 customeClass="flex"
@@ -11,6 +13,7 @@
                 @prev="gotoPrev"
             />
         </div>
+
         <div
             :style="{width: innerWidht + 'px', marginLeft: '-' + slidesInnerMarginLeft + 'px'}"
             class="slider-inner flex"
@@ -36,7 +39,7 @@
     import TextWithIcon from '@/components/atom/TextWithIcon';
     import {slides} from '@/data/slide.js'
   export default {
-    name: 'Slider',
+    name: 'ProjectSlider',
     components:{
         Slide,
         NextPrev,
@@ -64,7 +67,7 @@
         }
     },
     mounted(){
-        let singleWidth = this.$refs.wrapper.clientWidth/this.itemsPerSlide;
+        let singleWidth = this.$refs.slider_wrapper.clientWidth/this.itemsPerSlide;
         this.singleWidth = singleWidth;
         this.innerWidht =  singleWidth * this.slides.length;
     },
