@@ -14,14 +14,17 @@
            </option>
        </select>
     </div>
-   
+
+
+   <Slider />
 </template>
 
 <script>
+    import Slider from '@/components/slider/Slider'
   export default {
     name: 'test',
     components:{
-
+        Slider
     },
     props:{
 

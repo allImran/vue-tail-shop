@@ -8,6 +8,7 @@
 
                 <About />
                 <Skill />
+                <ProjectSlider />
                 <Certificate />
                 <Experience />
                 <Education />
@@ -29,6 +30,7 @@
     import Experience from '@/components/molecule/profile/Experience'
     import Education from '@/components/molecule/profile/Education'
     import Sidebar from '@/components/molecule/profile/Sidebar'
+    import ProjectSlider from '@/components/molecule/profile/ProjectSlide'
   export default {
     name: '',
     components:{
@@ -38,7 +40,8 @@
         Sidebar,
         Certificate,
         Experience,
-        Education
+        Education,
+        ProjectSlider
     },
     props:{
 
