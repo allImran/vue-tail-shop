@@ -15,12 +15,19 @@
             :style="{width: innerWidht + 'px', marginLeft: '-' + slidesInnerMarginLeft + 'px'}"
             class="slider-inner flex"
         >
-            <Slide
-                :style="{width: singleWidth + 'px'}"
-                v-for="(slide, i) in slides"
-                :key="i"
-                :slide="slide.img"
+        <slide 
+            v-slot="slide"
+            :style="{width: singleWidth + 'px'}"
+            v-for="(slide, i) in slides"
+            :key="i"
+            :slide="slide.img"
+        >
+        {{ slide.slide }}
+           <GradientCard
+                :image="slide.slide"
             />
+        </slide>
+            
         </div>
         <!-- <div class="navigation">
             <span @click="gotoPrev">Prev</span>
@@ -31,6 +38,7 @@
 </template>
 
 <script>
+    import GradientCard from '@/components/atom/GradientCard'
     import Slide from '@/components/slider/Slide.vue';
     import NextPrev from '@/components/atom/NextPrev';
     import TextWithIcon from '@/components/atom/TextWithIcon';
@@ -40,7 +48,8 @@
     components:{
         Slide,
         NextPrev,
-        TextWithIcon
+        TextWithIcon,
+        GradientCard
     },
     props: {
         itemsPerSlide: {
@@ -51,7 +60,19 @@
       return{
             innerWidht: 0,
             singleWidth: 0,
-            currentIndex: 0
+            currentIndex: 0,
+            responsive: [
+                {
+                    width: 900,
+                    item: 3
+                },{
+                    width: 600,
+                    item: 2
+                },{
+                    width: 500,
+                    item: 1
+                },
+            ]
       }
     },
     
@@ -64,7 +85,13 @@
         }
     },
     mounted(){
-        let singleWidth = this.$refs.wrapper.clientWidth/this.itemsPerSlide;
+        let diviceWidth= this.$refs.wrapper.clientWidth;
+        // this.responsive.forEach((item) => {
+        //     if(diviceWidth > item.width){
+        //         this.itemsPerSlide = item.item
+        //     }
+        // });
+        let singleWidth = diviceWidth/this.itemsPerSlide;
         this.singleWidth = singleWidth;
         this.innerWidht =  singleWidth * this.slides.length;
     },
