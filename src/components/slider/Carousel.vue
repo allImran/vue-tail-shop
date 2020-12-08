@@ -15,20 +15,17 @@
             :style="{width: innerWidht + 'px', marginLeft: '-' + slidesInnerMarginLeft + 'px'}"
             class="slider-inner flex"
         >
-        <slide 
-            v-slot="slide"
+        <div 
             :style="{width: singleWidth + 'px'}"
+            class="border-4 border-gray-100" 
             v-for="(slide, i) in slides"
             :key="i"
-            :slide="slide.img"
         >
-           <GradientCard
-                :image="slide.slide"
-            />
-        </slide>
+            <slot :slide="slide"></slot>
+        </div>
             
         </div>
-        <!-- <div class="navigation">
+       <!--  <div class="navigation">
             <span @click="gotoPrev">Prev</span>
             <span @click="gotoIndex(i)" class="nav-number" :key="i" v-for="(slide, i) in slides">{{ i +  1 }}</span>
             <span @click="gotoNext">Next</span>
@@ -37,20 +34,19 @@
 </template>
 
 <script>
-    import GradientCard from '@/components/atom/GradientCard'
-    import Slide from '@/components/slider/Slide.vue';
     import NextPrev from '@/components/atom/NextPrev';
     import TextWithIcon from '@/components/atom/TextWithIcon';
-    import {slides} from '@/data/slide.js'
   export default {
     name: 'Slider',
     components:{
-        Slide,
         NextPrev,
         TextWithIcon,
-        GradientCard
     },
     props: {
+        slides: {
+            required: true,
+            type: Array
+        }
     },
     data(){
       return{
@@ -80,10 +76,6 @@
         slidesInnerMarginLeft() {
             return this.currentIndex * this.singleWidth;
         },
-        
-        slides() {
-            return slides;
-        }
 
     },
     mounted(){
@@ -98,6 +90,7 @@
         let singleWidth = diviceWidth/this.itemsPerSlide;
         this.singleWidth = singleWidth;
         this.innerWidht =  singleWidth * this.slides.length;
+
     },
     methods:{
         gotoPrev() {
@@ -121,7 +114,6 @@
 
 <style>
     .slides{
-        /*width: 600px;*/
         overflow: hidden;
     }
     .slider-inner{
