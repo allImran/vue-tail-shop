@@ -22,7 +22,6 @@
             :key="i"
             :slide="slide.img"
         >
-        {{ slide.slide }}
            <GradientCard
                 :image="slide.slide"
             />
@@ -52,25 +51,26 @@
         GradientCard
     },
     props: {
-        itemsPerSlide: {
-            default: 2
-        }
     },
     data(){
       return{
+            itemsPerSlide: 0,
             innerWidht: 0,
             singleWidth: 0,
             currentIndex: 0,
             responsive: [
                 {
-                    width: 900,
-                    item: 3
+                    width: 0,
+                    item: 1
                 },{
-                    width: 600,
+                    width: 768,
                     item: 2
                 },{
-                    width: 500,
-                    item: 1
+                    width: 1024,
+                    item: 3
+                },{
+                    width: 1280,
+                    item: 4
                 },
             ]
       }
@@ -78,19 +78,23 @@
     
     computed:{
         slidesInnerMarginLeft() {
-            return this.currentIndex * this.singleWidth
+            return this.currentIndex * this.singleWidth;
         },
+        
         slides() {
             return slides;
         }
+
     },
     mounted(){
         let diviceWidth= this.$refs.wrapper.clientWidth;
-        // this.responsive.forEach((item) => {
-        //     if(diviceWidth > item.width){
-        //         this.itemsPerSlide = item.item
-        //     }
-        // });
+        
+        for(var i=0; i<this.responsive.length; i++){
+             if(diviceWidth > this.responsive[i].width){
+                this.itemsPerSlide = this.responsive[i].item;
+            }
+        }
+        
         let singleWidth = diviceWidth/this.itemsPerSlide;
         this.singleWidth = singleWidth;
         this.innerWidht =  singleWidth * this.slides.length;
