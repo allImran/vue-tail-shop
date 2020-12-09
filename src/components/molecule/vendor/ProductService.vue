@@ -22,13 +22,13 @@
     </div>
 
 
-    <Carousel header-text="some of our project" :slides="slides" :responsive="responsive">
+    <Carousel headerText="some of our project" :slides="slides" :responsive="responsive">
       <template v-slot="{slide}">
         <GradientCard :image="slide.img"/>
       </template>
     </Carousel>
 
-    <Carousel header-text="some of our client" :slides="someOfClients" :responsive="someOfOurClientCarousel">
+    <Carousel headerText="some of our client" :slides="someOfClients" :responsive="someOfOurClientCarousel">
       <template v-slot="{slide}">
         <Card
             :image="slide.image_url"
@@ -45,7 +45,7 @@
       </template>
     </ClientTestimonial>-->
 
-    <Carousel header-text="client testimonial" :slides="someOfClients" :responsive="clientTestimonialCarousel">
+    <Carousel headerText="client testimonial" :slides="someOfClients" :responsive="clientTestimonialCarousel">
       <template v-slot="{slide}">
         <div
             class="mt-10 flex p-3 h-48 mb-10 relative border border-solid border-gray-300 flex-col items-center"
