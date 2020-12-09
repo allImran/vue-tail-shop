@@ -17,7 +17,7 @@
   </div>
 
 
-  <Carousel :slides="slides">
+  <Carousel :slides="slides" :responsive="responsive">
     <template v-slot="{slide}">
       <GradientCard :image="slide.img"/>
     </template>
@@ -29,6 +29,7 @@
 import GradientCard from '@/components/atom/GradientCard'
 import Carousel from '@/components/slider/Carousel'
 import {slides} from '@/data/slide.js'
+import {responsive} from '@/config/carousel'
 
 export default {
   name: 'test',
@@ -41,6 +42,7 @@ export default {
     return {
       categoryId: '',
       slides: slides,
+      responsive,
       response: [
         {
           id: 1,

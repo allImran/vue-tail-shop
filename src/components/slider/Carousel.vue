@@ -18,7 +18,7 @@
     >
       <div
           :style="{width: singleWidth + 'px'}"
-          class="border-4 border-gray-100"
+          class="border-4 border-transparent"
           v-for="(slide, i) in slides"
           :key="i"
       >
@@ -57,6 +57,10 @@ export default {
     },
     headerIcon:{
       default:''
+    },
+    responsive:{
+      type:Object,
+      required: true,
     }
 
   },
@@ -66,21 +70,6 @@ export default {
       innerWidht: 0,
       singleWidth: 0,
       currentIndex: 0,
-      responsive: [
-        {
-          width: 0,
-          item: 1
-        }, {
-          width: 768,
-          item: 2
-        }, {
-          width: 1024,
-          item: 3
-        }, {
-          width: 1280,
-          item: 4
-        },
-      ]
     }
   },
 

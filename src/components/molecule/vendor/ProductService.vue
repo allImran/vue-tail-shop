@@ -22,13 +22,22 @@
 		</div>
 
 
-    <Carousel header-text="some of our project" :slides="slides">
+    <Carousel header-text="some of our project" :slides="slides" :responsive="responsive">
       <template v-slot="{slide}">
         <GradientCard :image="slide.img"/>
       </template>
     </Carousel>
 
-		<OurClient />
+    <Carousel header-text="some of our client" :slides="someOfClients" :responsive="someOfOurClientCarousel">
+      <template v-slot="{slide}">
+          <Card
+              :image="slide.image_url"
+              border="none"
+          />
+      </template>
+    </Carousel>
+
+<!--		<OurClient />-->
 
 		<ClientTestimonial>
 			<template v-slot:top>
@@ -42,12 +51,16 @@
 	import TextWithIcon from "@/components/atom/TextWithIcon"
 	import TopBar from "@/components/molecule/navigation/TopBar.vue"
 	import ProductCard from "@/components/molecule/product/ProductCard.vue"
-	import OurClient from "@/components/molecule/vendor/OurClient.vue"
+	// import OurClient from "@/components/molecule/vendor/OurClient.vue"
 	import ClientTestimonial from "@/components/molecule/vendor/ClientTestimonial.vue"
   import GradientCard from '@/components/atom/GradientCard'
   import Carousel from '@/components/slider/Carousel'
+  import Card from '@/components/atom/Card'
   import {slides} from '@/data/slide.js'
 	import { products } from "@/data/products"
+  import {responsive} from '@/config/carousel'
+  import {someOfOurClientCarousel} from '@/config/someOfOurClientCarousel'
+  import { someOfClients } from "@/data/products";
 	export default{
 		name: 'ProductByCategory',
 
@@ -60,20 +73,26 @@
 			TextWithIcon,
 			TopBar,
 			ProductCard,
-			OurClient,
+			// OurClient,
 			ClientTestimonial,
       Carousel,
       GradientCard,
+      Card
 		},
     data() {
       return {
         slides: slides,
+        responsive,
+        someOfOurClientCarousel
       }
     },
 		computed: {
 			products() {
 				return products.slice(0, 10);
-			}
+			},
+      someOfClients() {
+        return someOfClients;
+      }
 		}
 	}
 </script>
