@@ -21,19 +21,12 @@
 			</div>
 		</div>
 
-		<ProjectCardView>
-			<template v-slot:top>
-				<div class="flex justify-between mt-5 mb-3 pr-3">
-					<p class="uppercase text-gray-700 font-bold">some of our project</p>
-					<router-link 
-						to="#" 
-						class="text-blue-500 capitalize"
-					>
-						view all		
-					</router-link>
-				</div>
-			</template>
-		</ProjectCardView>
+
+    <Carousel header-text="some of our project" :slides="slides">
+      <template v-slot="{slide}">
+        <GradientCard :image="slide.img"/>
+      </template>
+    </Carousel>
 
 		<OurClient />
 
@@ -46,12 +39,14 @@
 </template>
 
 <script>
-	import TextWithIcon from "@/components/atom/TextWithIcon";
-	import TopBar from "@/components/molecule/navigation/TopBar.vue";
-	import ProductCard from "@/components/molecule/product/ProductCard.vue";
-	import ProjectCardView from "@/components/molecule/project/ProjectCardView.vue";
-	import OurClient from "@/components/molecule/vendor/OurClient.vue";
-	import ClientTestimonial from "@/components/molecule/vendor/ClientTestimonial.vue";
+	import TextWithIcon from "@/components/atom/TextWithIcon"
+	import TopBar from "@/components/molecule/navigation/TopBar.vue"
+	import ProductCard from "@/components/molecule/product/ProductCard.vue"
+	import OurClient from "@/components/molecule/vendor/OurClient.vue"
+	import ClientTestimonial from "@/components/molecule/vendor/ClientTestimonial.vue"
+  import GradientCard from '@/components/atom/GradientCard'
+  import Carousel from '@/components/slider/Carousel'
+  import {slides} from '@/data/slide.js'
 	import { products } from "@/data/products"
 	export default{
 		name: 'ProductByCategory',
@@ -65,10 +60,16 @@
 			TextWithIcon,
 			TopBar,
 			ProductCard,
-			ProjectCardView,
 			OurClient,
-			ClientTestimonial
+			ClientTestimonial,
+      Carousel,
+      GradientCard,
 		},
+    data() {
+      return {
+        slides: slides,
+      }
+    },
 		computed: {
 			products() {
 				return products.slice(0, 10);
