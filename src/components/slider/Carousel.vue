@@ -15,14 +15,17 @@
             :style="{width: innerWidht + 'px', marginLeft: '-' + slidesInnerMarginLeft + 'px'}"
             class="slider-inner flex"
         >
-            <Slide
-                :style="{width: singleWidth + 'px'}"
-                v-for="(slide, i) in slides"
-                :key="i"
-                :slide="slide.img"
-            />
+        <div 
+            :style="{width: singleWidth + 'px'}"
+            class="border-4 border-gray-100" 
+            v-for="(slide, i) in slides"
+            :key="i"
+        >
+            <slot :slide="slide"></slot>
         </div>
-        <!-- <div class="navigation">
+            
+        </div>
+       <!--  <div class="navigation">
             <span @click="gotoPrev">Prev</span>
             <span @click="gotoIndex(i)" class="nav-number" :key="i" v-for="(slide, i) in slides">{{ i +  1 }}</span>
             <span @click="gotoNext">Next</span>
@@ -31,42 +34,63 @@
 </template>
 
 <script>
-    import Slide from '@/components/slider/Slide.vue';
     import NextPrev from '@/components/atom/NextPrev';
     import TextWithIcon from '@/components/atom/TextWithIcon';
-    import {slides} from '@/data/slide.js'
   export default {
     name: 'Slider',
     components:{
-        Slide,
         NextPrev,
-        TextWithIcon
+        TextWithIcon,
     },
     props: {
-        itemsPerSlide: {
-            default: 2
+        slides: {
+            required: true,
+            type: Array
         }
     },
     data(){
       return{
+            itemsPerSlide: 0,
             innerWidht: 0,
             singleWidth: 0,
-            currentIndex: 0
+            currentIndex: 0,
+            responsive: [
+                {
+                    width: 0,
+                    item: 1
+                },{
+                    width: 768,
+                    item: 2
+                },{
+                    width: 1024,
+                    item: 3
+                },{
+                    width: 1280,
+                    item: 4
+                },
+            ]
       }
     },
     
     computed:{
         slidesInnerMarginLeft() {
-            return this.currentIndex * this.singleWidth
+            return this.currentIndex * this.singleWidth;
         },
-        slides() {
-            return slides;
-        }
+
     },
     mounted(){
-        let singleWidth = this.$refs.wrapper.clientWidth/this.itemsPerSlide;
+        let diviceWidth= this.$refs.wrapper.clientWidth;
+        
+        for(var i=0; i<this.responsive.length; i++){
+             if(diviceWidth > this.responsive[i].width){
+                this.itemsPerSlide = this.responsive[i].item;
+            }
+        }
+        
+        let singleWidth = diviceWidth/this.itemsPerSlide;
         this.singleWidth = singleWidth;
         this.innerWidht =  singleWidth * this.slides.length;
+
     },
     methods:{
         gotoPrev() {
@@ -90,7 +114,6 @@
 
 <style>
     .slides{
-        /*width: 600px;*/
         overflow: hidden;
     }
     .slider-inner{

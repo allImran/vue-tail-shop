@@ -16,15 +16,22 @@
     </div>
 
 
-   <Slider />
+   <Carousel :slides="slides">
+       <template v-slot="{slide}">
+           <GradientCard :image="slide.img" />
+       </template>
+   </Carousel>
 </template>
 
 <script>
-    import Slider from '@/components/slider/Slider'
+    import GradientCard from '@/components/atom/GradientCard'
+    import Carousel from '@/components/slider/Carousel'
+    import {slides} from '@/data/slide.js'
   export default {
     name: 'test',
     components:{
-        Slider
+        Carousel,
+        GradientCard
     },
     props:{
 
@@ -32,6 +39,7 @@
     data(){
       return{
         categoryId: '',
+        slides: slides,
         response: [
             {
                 id: 1,
