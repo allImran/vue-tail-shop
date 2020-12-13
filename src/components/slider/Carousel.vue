@@ -114,8 +114,8 @@
         slidesInnerMarginLeft() {
             return this.currentIndex * this.singleWidth;
         },
-
     },
+    
     mounted(){
         let diviceWidth= this.$refs.wrapper.clientWidth;
         
@@ -135,14 +135,16 @@
             if(this.currentIndex == 0) {
                 return
             }
-            this.currentIndex--
+            this.currentIndex = this.currentIndex - this.itemsPerSlide
         },
+
         gotoNext() {
-            if(this.currentIndex == this.slides.length - 4) {
+            if(this.currentIndex >= this.slides.length - this.itemsPerSlide) {
                 return
             }
-            this.currentIndex++
+            this.currentIndex = this.currentIndex + this.itemsPerSlide
         },
+
         gotoIndex(i){
             this.currentIndex = i+2;
         }
