@@ -1,23 +1,43 @@
 <template>
-    <div class="slides">
+    <div class="slides px-3 relative bg-white">
+        <span 
+            @click="gotoPrev"
+            class="angleleftStatic" 
+            :class="angleLeft"
+        > 
+            {{ leftIcon }}
+        </span>
+        <span
+            class="angleRightStatic"
+            @click="gotoNext" 
+            :class="angleRight"
+        >
+            {{ rightIcon }}
+        </span>
+
         <div ref="wrapper" class="flex justify-between mb-3">
             <TextWithIcon 
                 icon="mdi mdi-home"
                 text="Our Project"
             />
-            <NextPrev
+            <!-- <NextPrev
                 customeClass="flex"
                 @next="gotoNext"
                 @prev="gotoPrev"
-            />
+            /> -->
+
+
+        </div>
+        <div class="sideNav">
+            
         </div>
         <div
             :style="{width: innerWidht + 'px', marginLeft: '-' + slidesInnerMarginLeft + 'px'}"
-            class="slider-inner flex"
+            class="slider-inner  flex"
         >
         <div 
             :style="{width: singleWidth + 'px'}"
-            class="border-4 border-gray-100" 
+            :class="singleSlideStyle" 
             v-for="(slide, i) in slides"
             :key="i"
         >
@@ -34,18 +54,36 @@
 </template>
 
 <script>
-    import NextPrev from '@/components/atom/NextPrev';
+    // import NextPrev from '@/components/atom/NextPrev';
     import TextWithIcon from '@/components/atom/TextWithIcon';
   export default {
-    name: 'Slider',
+    name: 'Carousel',
     components:{
-        NextPrev,
+        // NextPrev,
         TextWithIcon,
     },
     props: {
         slides: {
             required: true,
             type: Array
+        },
+        singleSlideStyle:{
+            type: String,
+            default: 'border-4 border-transparent'
+        },
+        leftIcon: {
+            default: '<'
+        },
+        rightIcon: {
+            default: '>'
+        },
+        angleLeft: {
+            type: String,
+            default: 'rounded-l border text-lg'
+        },
+        angleRight: {
+            type: String,
+            default: 'rounded-r border text-lg'
         }
     },
     data(){
@@ -116,7 +154,17 @@
     .slides{
         overflow: hidden;
     }
+
     .slider-inner{
         transition: margin 0.6s ease-out;
+    }
+
+    .leftmiddle{
+        left: 0;
+        bottom: 50%;
+    }
+    .rightmiddle{
+        right: 0;
+        bottom: 50%;
     }
 </style>
