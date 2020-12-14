@@ -263,4 +263,24 @@ export const someOfClients = [
         id: 10,
         image_url: '/images/some-of-client/10.png'
     },
+    {
+        id: 11,
+        image_url: '/images/some-of-client/1.png'
+    },
+    {
+        id: 12,
+        image_url: '/images/some-of-client/2.png'
+    },
+    {
+        id: 13,
+        image_url: '/images/some-of-client/3.png'
+    },
+    {
+        id: 14,
+        image_url: '/images/some-of-client/4.png'
+    },
+    {
+        id: 15,
+        image_url: '/images/some-of-client/5.png'
+    },
 ];
