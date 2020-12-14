@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <div class="p-1" :class="border">
+    <div  :class="border">
       <img
         class="m-auto card-image"
         :class="imgStyle"
@@ -9,7 +9,7 @@
       />
     </div>
     <router-link to="#">
-      <p :class="titleStyle" class="text-xs sm:text-base">{{ title }}</p>
+      <p :class="titleStyle">{{ title }}</p>
     </router-link>
     <p :class="subTitleStyle">{{ subTitle }}</p>
     <p :class="detailStyle">{{ detail }}</p>
@@ -34,7 +34,7 @@ export default {
       default: "Default title",
     },
     titleStyle: {
-      default: "text-gray-700 text-center w-full hover:text-blue-500",
+      default: "text-gray-700 text-center text-xs sm:text-base w-full hover:text-blue-500",
     },
     subTitle: String,
     subTitleStyle: {
