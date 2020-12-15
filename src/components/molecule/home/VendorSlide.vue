@@ -9,6 +9,16 @@
             <template v-slot="{slide}">
                 <TriCard :slide="slide"/>
             </template>
+
+            <template v-slot:top>
+                <TextWithIcon
+                    class="mt-2"
+                    icon="mdi mdi-home"
+                    iconStyle="text-pink-700 text-lg"
+                    text="Our Project"
+                    textStyle="text-md text-gray-700 font-bold"
+                />
+            </template>
         </Carousel>
     </div>
 </template>
@@ -16,19 +26,22 @@
 <script>
 import Carousel from '@/components/slider/Carousel'
 import TriCard from '@/components/molecule/home/TriCard'
-import {slides} from '@/data/slide.js'
+import {vendor} from '@/data/vendor.js'
+import TextWithIcon from '@/components/atom/TextWithIcon';
+
   export default {
     name: 'VendorSlide',
     components:{
         Carousel,
-        TriCard
+        TriCard,
+        TextWithIcon
     },
     props:{
 
     },
     data(){
       return{
-        slides: slides
+        slides: vendor
       }
     },
     computed:{

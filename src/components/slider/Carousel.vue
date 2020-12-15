@@ -16,10 +16,7 @@
         </span>
 
         <div ref="wrapper" class="flex justify-between mb-3">
-            <TextWithIcon 
-                icon="mdi mdi-home"
-                text="Our Project"
-            />
+            <slot name="top"></slot>
             <!-- <NextPrev
                 customeClass="flex"
                 @next="gotoNext"
@@ -55,12 +52,11 @@
 
 <script>
     // import NextPrev from '@/components/atom/NextPrev';
-    import TextWithIcon from '@/components/atom/TextWithIcon';
   export default {
     name: 'Carousel',
     components:{
         // NextPrev,
-        TextWithIcon,
+        // TextWithIcon,
     },
     props: {
         slides: {
@@ -135,14 +131,14 @@
             if(this.currentIndex == 0) {
                 return
             }
-            this.currentIndex = this.currentIndex - this.itemsPerSlide
+            this.currentIndex = this.currentIndex - 1
         },
 
         gotoNext() {
-            if(this.currentIndex >= this.slides.length - this.itemsPerSlide) {
+            if(this.currentIndex >= this.slides.length - 1) {
                 return
             }
-            this.currentIndex = this.currentIndex + this.itemsPerSlide
+            this.currentIndex++
         },
 
         gotoIndex(i){
