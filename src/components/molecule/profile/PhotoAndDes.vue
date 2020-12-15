@@ -15,8 +15,8 @@
       <div class="ml-0 sm:ml-56 flex justify-center sm:justify-between items-center py-3">
 
         <div class="flex">
-          <button class="focus:outline-none px-1 sm:px-5 mr-2 text-white py-1 rounded bg-blue-600">dfdf</button>
-          <button class="focus:outline-none px-1 sm:px-5 bg-gray-300 text-gray-700 py-1">fdfdfdf</button>
+          <button class="focus:outline-none px-1 sm:px-5 mr-2 text-white py-1 rounded bg-blue-600">Connect</button>
+          <button class="focus:outline-none px-1 sm:px-5 bg-gray-300 text-gray-700 py-1">Add to Bookmark</button>
         </div>
 
         <a
