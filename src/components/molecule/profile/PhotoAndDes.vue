@@ -9,7 +9,9 @@
     </div>
 
     <div class="bg-white">
-      <div class="h-48 w-48 p-1 bg-white shadow-md absolute ml-5 top-0 mt-16 rounded"></div>
+      <div class="h-48 w-48 p-1 bg-white shadow-md absolute ml-5 top-0 mt-16 rounded">
+        <img src="/images/client.jpg" class="w-full h-full object-cover">
+      </div>
       <div class="ml-0 sm:ml-56 flex justify-center sm:justify-between items-center py-3">
 
         <div class="flex">
