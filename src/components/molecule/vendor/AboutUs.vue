@@ -23,7 +23,11 @@
 
 <!--    <CertificateCardView/>-->
 
-    <Carousel headerText="CERTIFICATION, AUTHORIZATION & LICENCES" :slides="certificates" :responsive="certificateCarousel">
+    <Carousel 
+      class="mt-10"
+      :slides="certificates" 
+      :responsive="certificateCarousel"
+    >
       <template v-slot="{slide}">
         <Card
             :image="slide.image_url"
@@ -37,6 +41,13 @@
             detail="Lorem ipsum dolor sit amet, consectetur adipisicin sed do eiusmod tempor ncididunt"
         />
       </template>
+      <template v-slot:top>
+          <TextWithIcon
+              class="mt-2"
+              text="Certification, authorization & licenses"
+              textStyle="text-md uppercase text-gray-700 font-bold"
+          />
+      </template>
     </Carousel>
 
 <!--    <ManagementTeam>
@@ -45,7 +56,11 @@
       </template>
     </ManagementTeam>-->
 
-    <Carousel headerText="Our Management" :slides="certificates" :responsive="certificateCarousel">
+    <Carousel
+      class="mt-10"
+      :slides="certificates" 
+      :responsive="certificateCarousel"
+    >
       <template v-slot="{slide}">
         <div
             class="flex justify-center items-center">
@@ -59,6 +74,14 @@
           </div>
         </div>
       </template>
+
+      <template v-slot:top>
+          <TextWithIcon
+              class="mt-2"
+              text="our Management"
+              textStyle="text-md uppercase text-gray-700 font-bold"
+          />
+      </template>
     </Carousel>
   </div>
 </template>
@@ -68,6 +91,7 @@ import TextWithBgImage from '@/components/atom/TextWithBgImage'
 // import CertificateCardView from '@/components/molecule/vendor/CertificateCardView'
 // import ManagementTeam from '@/components/molecule/vendor/ManagementTeam'
 import Carousel from '@/components/slider/Carousel'
+import TextWithIcon from "@/components/atom/TextWithIcon"
 import Card from '@/components/atom/Card'
 import RoundImage from '@/components/atom/RoundImage'
 import { certificates } from "@/data/certificate"
@@ -82,6 +106,7 @@ export default {
     Carousel,
     Card,
     RoundImage,
+    TextWithIcon
 
   },
   props: {},

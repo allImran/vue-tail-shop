@@ -2,15 +2,15 @@
     <div class="slides px-3 relative bg-white">
         <span 
             @click="gotoPrev"
-            class="angleleftStatic" 
-            :class="angleLeft"
+            class="left-arrow" 
+            :class="leftArrowClasses"
         > 
             {{ leftIcon }}
         </span>
         <span
-            class="angleRightStatic"
+            class="right-arrow"
             @click="gotoNext" 
-            :class="angleRight"
+            :class="rightArrowClasses"
         >
             {{ rightIcon }}
         </span>
@@ -59,36 +59,8 @@
         // TextWithIcon,
     },
     props: {
-        slides: {
-            required: true,
-            type: Array
-        },
-        singleSlideStyle:{
-            type: String,
-            default: 'border-4 border-transparent'
-        },
-        leftIcon: {
-            default: '<'
-        },
-        rightIcon: {
-            default: '>'
-        },
-        angleLeft: {
-            type: String,
-            default: 'rounded-l border text-lg'
-        },
-        angleRight: {
-            type: String,
-            default: 'rounded-r border text-lg'
-        }
-    },
-    data(){
-      return{
-            itemsPerSlide: 0,
-            innerWidht: 0,
-            singleWidth: 0,
-            currentIndex: 0,
-            responsive: [
+        responsive: {
+            default: [
                 {
                     width: 0,
                     item: 1
@@ -103,6 +75,36 @@
                     item: 4
                 },
             ]
+        },
+        slides: {
+            required: true,
+            type: Array
+        },
+        singleSlideStyle:{
+            type: String,
+            default: 'border-4 border-transparent'
+        },
+        leftIcon: {
+            default: '<'
+        },
+        rightIcon: {
+            default: '>'
+        },
+        leftArrowClasses: {
+            type: String,
+            default: 'rounded-l border text-gray-600 font-semibold px-1 pointer'
+        },
+        rightArrowClasses: {
+            type: String,
+            default: 'rounded-r border text-gray-600 font-semibold px-1 pointer'
+        }
+    },
+    data(){
+      return{
+        itemsPerSlide: 0,
+        innerWidht: 0,
+        singleWidth: 0,
+        currentIndex: 0,
       }
     },
     
@@ -157,12 +159,4 @@
         transition: margin 0.6s ease-out;
     }
 
-    .leftmiddle{
-        left: 0;
-        bottom: 50%;
-    }
-    .rightmiddle{
-        right: 0;
-        bottom: 50%;
-    }
 </style>

@@ -1,0 +1,28 @@
+.home-vendor-slider .left-arrow {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.home-vendor-slider .right-arrow {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.left-arrow {
+	position: absolute;
+	top: 20px;
+	right: 35px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.right-arrow {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
