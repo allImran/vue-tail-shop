@@ -24,6 +24,8 @@
 
     <Carousel
       class="mt-10"
+      left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+      right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
       :slides="slides" 
       :responsive="responsive"
     >
@@ -42,6 +44,8 @@
 
     <Carousel
       class="mt-10"
+      left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+      right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
       :slides="someOfClients" 
       :responsive="someOfOurClientCarousel"
       >
@@ -71,6 +75,8 @@
 
     <Carousel 
       class="mt-10"
+      left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+      right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
       :slides="someOfClients" 
       :responsive="clientTestimonialCarousel">
       <template v-slot="{slide}">

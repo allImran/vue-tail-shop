@@ -10,7 +10,9 @@
 
 
         <div class="px-3">
-          <Carousel 
+          <Carousel
+            left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+            right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
             class="mt-10"
             :slides="skills" 
             :responsive="skillCarousel">
@@ -48,8 +50,10 @@
 
           <Carousel
             class="mt-10"
-           :slides="slides" 
-           :responsive="responsive"
+            :slides="slides"
+            left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+            right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+            :responsive="responsive"
            >
             <template v-slot="{slide}">
               <GradientCard :image="slide.img"/>
@@ -68,6 +72,8 @@
 
           <Carousel
             class="mt-10"
+            left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+            right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
             :slides="certificates" 
             :responsive="certificateCarousel">
             <template v-slot="{slide}">
@@ -95,6 +101,8 @@
           </Carousel>
 
           <Carousel
+            left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+            right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
             class="mt-10"
             :slides="slides" 
             :responsive="experienceCarousel"
@@ -121,6 +129,8 @@
           </Carousel>
 
           <Carousel
+            left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+            right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
             class="mt-10"
             :slides="slides" 
             :responsive="experienceCarousel"
