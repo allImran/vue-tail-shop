@@ -10,7 +10,10 @@
 
 
         <div class="px-3">
-          <Carousel headerTextStyle="font-bold text-xl text-blue-600 my-2 uppercase px-2" headerText="Skills" :slides="skills" :responsive="skillCarousel">
+          <Carousel 
+            class="mt-10"
+            :slides="skills" 
+            :responsive="skillCarousel">
             <template v-slot="{slide}">
 
               <div class="mr-5 mb-4">
@@ -20,6 +23,16 @@
                 </div>
               </div>
 
+            </template>
+
+            <template v-slot:top>
+                 <TextWithIcon
+                  class="mt-2"
+                  icon="mdi mdi-account"
+                  iconStyle="text-gl text-blue-600"
+                  text="skill"
+                 textStyle="font-bold text-gl text-blue-600 my-2 capitalize"
+                />
             </template>
           </Carousel>
 
@@ -33,13 +46,30 @@
             </p>
           </div>
 
-          <Carousel headerTextStyle="font-bold text-xl text-blue-600 my-2 uppercase" headerText="some of our project" :slides="slides" :responsive="responsive">
+          <Carousel
+            class="mt-10"
+           :slides="slides" 
+           :responsive="responsive"
+           >
             <template v-slot="{slide}">
               <GradientCard :image="slide.img"/>
             </template>
-          </Carousel>
 
-          <Carousel headerTextStyle="font-bold text-xl text-blue-600 my-2 uppercase" headerText="Certification" :slides="certificates" :responsive="certificateCarousel">
+              <template v-slot:top>
+                 <TextWithIcon
+                  class="mt-2"
+                  icon="mdi mdi-account"
+                  iconStyle="text-gl text-blue-600"
+                  text="project"
+                 textStyle="font-bold text-gl text-blue-600 my-2 capitalize"
+                />
+            </template>
+            </Carousel>
+
+          <Carousel
+            class="mt-10"
+            :slides="certificates" 
+            :responsive="certificateCarousel">
             <template v-slot="{slide}">
               <Card
                   :image="slide.image_url"
@@ -53,9 +83,22 @@
                   detail="Lorem ipsum dolor sit amet, consectetur adipisicin sed do eiusmod tempor ncididunt"
               />
             </template>
+            <template v-slot:top>
+                <TextWithIcon
+                  class="mt-2"
+                  text="Certification"
+                  icon="mdi mdi-account"
+                  iconStyle="text-gl text-blue-600"
+                 textStyle="font-semibold text-lg text-blue-600 my-2 capitalize"
+                />
+          </template>
           </Carousel>
 
-          <Carousel headerTextStyle="font-bold text-xl text-blue-600 my-2 uppercase" headerText="Experience" :slides="slides" :responsive="experienceCarousel">
+          <Carousel
+            class="mt-10"
+            :slides="slides" 
+            :responsive="experienceCarousel"
+          >
             <template v-slot="{slide}">
 
               <div class="mr-5 mb-4">
@@ -65,11 +108,23 @@
                 />
                 <Bordered/>
               </div>
-
+            </template>
+            <template v-slot:top>
+             <TextWithIcon
+                class="mt-2"
+                icon="mdi mdi-account"
+                iconStyle="text-gl text-blue-600"
+                text="Experience"
+                textStyle="font-semibold text-lg text-blue-600 my-2 capitalize"
+            />
             </template>
           </Carousel>
 
-          <Carousel headerTextStyle="font-bold text-xl text-blue-600 my-2 uppercase" headerText="Education" :slides="slides" :responsive="experienceCarousel">
+          <Carousel
+            class="mt-10"
+            :slides="slides" 
+            :responsive="experienceCarousel"
+          >
             <template v-slot="{slide}">
 
               <div class="mr-5 mb-4">
@@ -79,6 +134,15 @@
                 />
                 <Bordered/>
               </div>
+            </template>
+            <template v-slot:top>
+             <TextWithIcon
+                class="mt-2"
+                icon="mdi mdi-account"
+                  iconStyle="text-gl text-blue-600"
+                text="education"
+                textStyle="font-semibold text-lg text-blue-600 my-2 capitalize"
+                />
             </template>
           </Carousel>
         </div>
@@ -111,6 +175,7 @@ import { certificates } from "@/data/certificate"
 import {certificateCarousel} from '@/config/certificateCarousel'
 import {experienceCarousel} from '@/config/experienceCarousel'
 import {skillCarousel} from '@/config/skillCarousel'
+import TextWithIcon from "@/components/atom/TextWithIcon"
 
 
 export default {
@@ -125,7 +190,7 @@ export default {
     Bordered,
     RoundedImage,
     CircularProgress,
-
+    TextWithIcon
   },
   props: {},
   data() {

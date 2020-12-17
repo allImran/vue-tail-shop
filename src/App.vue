@@ -17,5 +17,8 @@
   }
 </script>
 
-<style src="./assets/style/app.css" />
-<style src="./assets/style/style.css" />
+<style>
+  @import url('./assets/style/app.css');
+  @import url('./assets/style/style.css');
+  @import url('./assets/style/slider.css');
+</style>

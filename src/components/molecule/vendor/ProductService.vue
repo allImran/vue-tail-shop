@@ -22,18 +22,42 @@
     </div>
 
 
-    <Carousel headerText="some of our project" :slides="slides" :responsive="responsive">
+    <Carousel
+      class="mt-10"
+      :slides="slides" 
+      :responsive="responsive"
+    >
       <template v-slot="{slide}">
         <GradientCard :image="slide.img"/>
       </template>
+
+      <template v-slot:top>
+          <TextWithIcon
+              class="mt-2"
+              text="Sme of Our Project"
+              textStyle="text-md uppercase text-gray-700 font-bold"
+          />
+      </template>
     </Carousel>
 
-    <Carousel headerText="some of our client" :slides="someOfClients" :responsive="someOfOurClientCarousel">
+    <Carousel
+      class="mt-10"
+      :slides="someOfClients" 
+      :responsive="someOfOurClientCarousel"
+      >
       <template v-slot="{slide}">
         <Card
             :image="slide.image_url"
             border="none"
         />
+      </template>
+
+       <template v-slot:top>
+          <TextWithIcon
+              class="mt-2"
+              text="Sme of Our client"
+              textStyle="text-md uppercase text-gray-700 font-bold"
+          />
       </template>
     </Carousel>
 
@@ -45,7 +69,10 @@
       </template>
     </ClientTestimonial>-->
 
-    <Carousel headerText="client testimonial" :slides="someOfClients" :responsive="clientTestimonialCarousel">
+    <Carousel 
+      class="mt-10"
+      :slides="someOfClients" 
+      :responsive="clientTestimonialCarousel">
       <template v-slot="{slide}">
         <div
             class="mt-10 flex p-3 h-48 mb-10 relative border border-solid border-gray-300 flex-col items-center"
@@ -64,6 +91,14 @@
             obcaecati beatae dolor. Accusamus, nihil.</p>
         </div>
       </template>
+      <template v-slot:top>
+          <TextWithIcon
+              class="mt-2"
+              text="client's testimonial"
+              textStyle="text-md uppercase text-gray-700 font-bold"
+          />
+      </template>
+
     </Carousel>
   </div>
 </template>
