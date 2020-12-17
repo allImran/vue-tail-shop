@@ -3,8 +3,8 @@
         <Carousel
             class="home-vendor-slider"
             :slides="slides"
-            left-arrow-classes="absolute text-white px-1 text-lg rounded-r py-2 bg-gray-800 cursor-pointer bg-opacity-25"
-            right-arrow-classes="absolute text-white px-1 text-lg rounded-r py-2 bg-gray-800 cursor-pointer bg-opacity-25"
+            left-arrow-classes="text-white px-1 text-lg rounded-r py-2 bg-gray-800 cursor-pointer bg-opacity-25"
+            right-arrow-classes="text-white px-1 text-lg rounded-r py-2 bg-gray-800 cursor-pointer bg-opacity-25"
             singleSlideStyle="border-8 border-transparent"
         >
             <template v-slot="{slide}">

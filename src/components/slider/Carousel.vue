@@ -137,7 +137,7 @@
         },
 
         gotoNext() {
-            if(this.currentIndex >= this.slides.length - 1) {
+            if(this.currentIndex >= this.slides.length - this.itemsPerSlide) {
                 return
             }
             this.currentIndex++
