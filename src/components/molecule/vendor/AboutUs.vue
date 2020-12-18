@@ -25,7 +25,9 @@
 
     <Carousel 
       class="mt-10"
-      :slides="certificates" 
+      :slides="certificates"
+      left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+      right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
       :responsive="certificateCarousel"
     >
       <template v-slot="{slide}">
@@ -57,6 +59,8 @@
     </ManagementTeam>-->
 
     <Carousel
+      left-arrow-classes="group-left-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
+      right-arrow-classes="group-right-arrow rounded-l border text-gray-600 font-semibold px-1 pointer"
       class="mt-10"
       :slides="certificates" 
       :responsive="certificateCarousel"

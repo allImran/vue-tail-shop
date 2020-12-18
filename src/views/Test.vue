@@ -16,33 +16,35 @@
     </select>
   </div>
 
-
-  <Carousel :slides="slides" :responsive="responsive">
-    <template v-slot="{slide}">
-      <GradientCard :image="slide.img"/>
-    </template>
-  </Carousel>
-
+<div class="container mx-auto bg-white">
+    <Carousel
+      class="px-10 home-vendor-slider"
+      :slides="categories" 
+      :responsive="navResponsive"
+    >
+      <template v-slot="{slide}">
+        <p class="truncate mb-1">{{ slide.name }}</p>
+      </template>
+    </Carousel>
+</div>
 </template>
 
 <script>
-import GradientCard from '@/components/atom/GradientCard'
 import Carousel from '@/components/slider/Carousel'
-import {slides} from '@/data/slide.js'
-import {responsive} from '@/config/carousel'
+import {categories} from '@/data/category.js'
+import {navResponsive} from '@/config/carousel'
 
 export default {
-  name: 'test',
+  name: 'TestComponent',
   components: {
     Carousel,
-    GradientCard
   },
   props: {},
   data() {
     return {
       categoryId: '',
-      slides: slides,
-      responsive,
+      navResponsive,
+      categories,
       response: [
         {
           id: 1,
